@@ -1,0 +1,60 @@
+/* Grace Precious Metals — responsive layer.
+   Media queries can't live in inline styles, so this shared sheet handles
+   the mobile breakpoint. Uses !important to override desktop inline styles.
+   Note: React re-serializes inline styles with a space after the colon
+   ("font-size: 148px"), so value-based [style*="..."] selectors are unreliable —
+   we use property-only selectors (grid-template-columns) and explicit hook
+   classes (.gpm-hero-num, .gpm-stack-divider) for the special cases. */
+
+header nav { position: relative; }
+.gpm-burger { display: none; }
+.gpm-nav-cb { display: none; }
+.gpm-mobile-panel { display: none; }
+
+@media (max-width: 860px) {
+  /* swap desktop nav for the burger */
+  .gpm-nav-links { display: none !important; }
+  .gpm-nav-cta   { display: none !important; }
+  .gpm-burger    { display: flex !important; }
+  .gpm-nav-cb:checked ~ .gpm-mobile-panel { display: block !important; }
+
+  /* stack every multi-column grid */
+  [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+
+  /* tame oversized display type */
+  h1 { font-size: clamp(32px, 8.6vw, 46px) !important; line-height: 1.07 !important; }
+  h2 { font-size: clamp(25px, 6.2vw, 34px) !important; }
+
+  /* giant display numerals (Pricing "11.1%", 404 "404") — explicit hooks */
+  .gpm-hero-num { font-size: clamp(54px, 18vw, 90px) !important; line-height: .95 !important; }
+
+  /* once grids stack, a column's vertical divider becomes a stray line — drop it */
+  .gpm-stack-divider { border-right: none !important; padding-right: 0 !important; }
+
+  /* swindle "Grace's answer" column: full width + top divider when stacked */
+  .gpm-swindle-answer { width: auto !important; border-left: none !important; border-top: 1px solid rgba(201,155,73,.22) !important; padding-left: 0 !important; padding-top: 16px !important; }
+
+  /* conversion heroes: lead form sits directly under the headline, supporting
+     copy below it (DOM order is headline → body → form; order re-sequences) */
+  .gpm-hero-headline { order: 1 !important; }
+  .gpm-hero-form     { order: 2 !important; }
+  .gpm-hero-body     { order: 3 !important; }
+
+  /* keep the stacked form a compact, centered card — not edge-to-edge */
+  .gpm-hero-form  { max-width: 460px !important; margin-left: auto !important; margin-right: auto !important; width: 100% !important; }
+
+  /* two-column form section (Briefing): pull the form above the supporting list */
+  .gpm-form-first { order: -1 !important; position: static !important; margin: 0 auto 32px !important; max-width: 460px !important; width: 100% !important; }
+
+  /* belt-and-braces: never let a hero overflow the viewport horizontally */
+  body { overflow-x: hidden; }
+}
+
+/* Desktop placement for the conversion heroes: two columns, form spanning the
+   right, headline + body stacked on the left. */
+@media (min-width: 861px) {
+  .gpm-hero-grid { grid-template-columns: 1.08fr .92fr; }
+  .gpm-hero-headline { grid-column: 1; grid-row: 1; align-self: end; }
+  .gpm-hero-body     { grid-column: 1; grid-row: 2; align-self: start; }
+  .gpm-hero-form     { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+}

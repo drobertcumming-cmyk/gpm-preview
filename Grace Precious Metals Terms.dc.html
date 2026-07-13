@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#F7F2E9;font-family:'Public Sans',system-ui,sans-serif;color:#26323F;-webkit-font-smoothing:antialiased;font-size:18px;line-height:1.6;}
+  img{display:block;max-width:100%;}
+  a{text-decoration:none;color:inherit;}
+</style>
+  <link rel="stylesheet" href="responsive.css">
+</helmet>
+
+<div style="background:#F7F2E9;color:#26323F;overflow-x:clip;">
+
+  <!-- ===== UTILITY BAR ===== -->
+  <div style="background:#0F1D2E;color:#D9E0E8;font-size:14px;letter-spacing:.02em;">
+    <div style="max-width:1180px;margin:0 auto;padding:9px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <span style="color:#C99B49;font-weight:600;">PROVERBS 11:1 — “A JUST WEIGHT IS HIS DELIGHT.”</span>
+      <span style="opacity:.85;">IRS-approved custodian &amp; depository · Salaried experts</span>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  
+
+  <span id="top"></span>
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(247,242,233,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(15,29,46,.12);">
+    <nav style="max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="Grace Precious Metals Home.dc.html" style="display:flex;align-items:center;gap:13px;">
+        <svg viewBox="0 0 80 90" width="38" height="43" style="display:block;flex-shrink:0;" aria-hidden="true">
+          <defs><linearGradient id="navGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2A24E"></stop><stop offset="1" stop-color="#9A7230"></stop></linearGradient></defs>
+          <g fill="url(#navGold)"><circle cx="40" cy="8" r="5"></circle><rect x="37.5" y="12" width="5" height="60" rx="1"></rect><rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect><rect x="25" y="71" width="30" height="5" rx="1.5"></rect><rect x="18" y="78" width="44" height="7" rx="2.5"></rect></g>
+          <g stroke="url(#navGold)" stroke-width="2" fill="none" stroke-linecap="round"><path d="M10 24 L2 47 M10 24 L18 47"></path><path d="M70 24 L62 47 M70 24 L78 47"></path></g>
+          <g fill="url(#navGold)"><path d="M0 47 Q10 65 20 47 Z"></path><path d="M60 47 Q70 65 80 47 Z"></path></g>
+        </svg>
+        <span style="display:flex;flex-direction:column;line-height:1;">
+          <span style="font-family:'Newsreader',serif;font-size:27px;font-weight:600;color:#3A2A18;letter-spacing:-.005em;">Grace</span>
+          <span style="font-size:10px;font-weight:700;letter-spacing:.26em;color:#B0863C;text-transform:uppercase;margin-top:4px;">Precious Metals</span>
+        </span>
+      </a>
+      <div class="gpm-nav-links" style="display:flex;align-items:center;gap:30px;font-size:15.5px;font-weight:500;color:#3B4855;">
+        <div style="position:relative;" onMouseEnter="{{ openPricing }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Pricing.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Pricing<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ pricingCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ pricingOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:600px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Pricing</div>
+                <a href="Grace Precious Metals Buyback.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:22px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#2A1F12;">Buyback at wholesale</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:16px;line-height:1.5;color:#5A5043;margin:7px 0 0;max-width:440px;">When you sell, we pay you the wholesale price of precious metals. The full policy and how the round-trip cost works.</p>
+                </a>
+                <a href="Grace Precious Metals Numismatic.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:22px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#2A1F12;">Numismatic coins</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:16px;line-height:1.5;color:#5A5043;margin:7px 0 0;max-width:440px;">Why we do not sell numismatic, proof, or rare coins, and what to be careful of when other dealers offer them.</p>
+                </a>
+                <a href="Grace Precious Metals Pricing.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding-top:22px;margin-top:4px;font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#B0863C;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#96702E;">See full pricing page →</a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <div style="position:relative;" onMouseEnter="{{ openGoldIra }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Rollover.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Gold IRA<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ goldIraCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ goldIraOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:560px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Gold IRA</div>
+                <a href="Grace Precious Metals Rollover.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">How it works</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">What a Gold IRA is, how you fund it, what you can hold, and how long it takes to set up.</p>
+                </a>
+                <a href="Grace Precious Metals Why Invest.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Why invest</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">The reasons people hold gold in a retirement portfolio — and what gold does and does not do.</p>
+                </a>
+                <a href="Grace Precious Metals FAQ.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">FAQs</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Twelve questions we get most often, answered in plain language.</p>
+                </a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <div style="position:relative;" onMouseEnter="{{ openWhoWeAre }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Who We Are.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Who we are<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ whoWeAreCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ whoWeAreOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:560px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Who we are</div>
+                <a href="Grace Precious Metals Who We Are.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">The founders</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">The people who built Grace — Bill Armour, Andrew Armour, and Duncan Cumming.</p>
+                </a>
+                <a href="Grace Precious Metals Williams Story.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Bill’s story</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Bill Armour’s testimony — why he started Grace, in his own voice.</p>
+                </a>
+                <a href="Grace Precious Metals How We Operate.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">How we operate</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Licensing, custody, expert pay, pricing governance, and what we do with your data.</p>
+                </a>
+                <a href="Grace Precious Metals Brand Ambassador.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Our Brand Ambassador</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Marjorie Taylor Greene on why she stands with Grace, and the shared ground behind it.</p>
+                </a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <a href="Grace Precious Metals Resources.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Resources</a>
+      </div>
+      <div class="gpm-nav-cta" style="display:flex;align-items:center;gap:14px;">
+        <a href="Grace Precious Metals Briefing.dc.html" style="background:#D2A24E;color:#0F1D2E;font-weight:700;font-size:15px;padding:12px 20px;border-radius:4px;white-space:nowrap;box-shadow:0 6px 16px -6px rgba(210,162,78,.7);" style-hover="background:#E3B75F;box-shadow:0 8px 20px -6px rgba(210,162,78,.85);">Get the Briefing</a>
+        <a href="Grace Precious Metals Advisor.dc.html" style="background:#15273B;color:#F4EEE2;font-weight:600;font-size:15px;padding:12px 20px;border-radius:4px;white-space:nowrap;" style-hover="background:#0F1D2E;">Talk to an Expert</a>
+      </div>
+    <input type="checkbox" id="gpmNav" class="gpm-nav-cb">
+        <label for="gpmNav" class="gpm-burger" aria-label="Open menu" style="cursor:pointer;width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid rgba(15,29,46,.2);border-radius:7px;">
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+        </label>
+        <div class="gpm-mobile-panel" style="position:absolute;top:100%;left:0;right:0;background:#F3ECDE;border-top:1px solid rgba(15,29,46,.12);box-shadow:0 30px 60px -24px rgba(15,29,46,.45);padding:8px 28px 24px;z-index:70;">
+          <a href="Grace Precious Metals Pricing.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Pricing</a>
+          <a href="Grace Precious Metals Rollover.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Gold IRA</a>
+          <a href="Grace Precious Metals Why Invest.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Why invest</a>
+          <a href="Grace Precious Metals FAQ.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">FAQs</a>
+          <a href="Grace Precious Metals Who We Are.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Who we are</a>
+          <a href="Grace Precious Metals Resources.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Resources</a>
+          <div style="display:flex;gap:12px;margin-top:18px;">
+            <a href="Grace Precious Metals Briefing.dc.html" style="flex:1;text-align:center;background:#D2A24E;color:#0F1D2E;font-weight:700;font-size:15px;padding:13px 12px;border-radius:4px;">Get the Briefing</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style="flex:1;text-align:center;background:#15273B;color:#F4EEE2;font-weight:600;font-size:15px;padding:13px 12px;border-radius:4px;">Talk to an Expert</a>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section style="background:#0F1D2E;color:#F4EEE2;">
+    <div style="max-width:920px;margin:0 auto;padding:56px 28px 60px;">
+      <div style="font-size:14px;color:#7E8B99;margin-bottom:30px;">
+        <a href="Grace Precious Metals Home.dc.html" style="color:#C99B49;" style-hover="color:#fff;">Home</a> <span style="color:#54616F;">/</span> Terms and Conditions
+      </div>
+      <p style="font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:#C99B49;font-weight:700;margin:0 0 16px;">Grace Precious Metals</p>
+      <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:58px;line-height:1.04;letter-spacing:-.02em;margin:0 0 26px;color:#FBF7EE;">Terms and Conditions</h1>
+      <div style="display:flex;gap:40px;flex-wrap:wrap;border-top:1px solid rgba(201,155,73,.25);padding-top:22px;">
+        <div>
+          <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7E8B99;font-weight:600;margin-bottom:5px;">Effective date</div>
+          <div style="font-family:'Newsreader',serif;font-size:19px;color:#F4EEE2;">August 2026</div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7E8B99;font-weight:600;margin-bottom:5px;">Last updated</div>
+          <div style="font-family:'Newsreader',serif;font-size:19px;color:#F4EEE2;">August 2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TERMS BODY ===== -->
+  <section style="background:#F7F2E9;">
+    <div style="max-width:920px;margin:0 auto;padding:64px 28px 40px;">
+      <p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">These Terms and Conditions (“Terms”) govern your access to and use of the website located at gracepreciousmetals.com and any related content, tools, communications, and services (together, the “Services”) provided by Grace Precious Metals (“Grace Precious Metals,” “Grace,” “we,” “us,” or “our”).</p>
+      <p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">Please read these Terms carefully. They include important provisions that affect your legal rights, including disclaimers of warranties, limitations of our liability, and — in Section 15 — a dispute resolution provision that may require individual arbitration and a waiver of class actions.</p>
+
+      <section id="acceptance" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">1. Acceptance of These Terms</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">By accessing or using the Services, you accept and agree to be bound by these Terms and by our Privacy Policy, which is incorporated here by reference. If you do not agree to these Terms, do not access or use the Services.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">You represent and warrant that you are at least 18 years of age and are able to enter into a legally binding contract. The Services are intended for residents of the United States.</p>
+      </section>
+
+      <section id="changes" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">2. Changes to These Terms</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">We may revise these Terms from time to time. When we do, we will update the “Last Updated” date above and post the revised Terms on the Services. Changes are effective when posted. Your continued use of the Services after changes are posted means you accept the revised Terms. We encourage you to review these Terms periodically.</p>
+      </section>
+
+      <section id="services" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">3. The Services and Account Information</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">We may withdraw, change, suspend, restrict, or discontinue all or any part of the Services at any time, with or without notice. We will not be liable if all or any part of the Services is unavailable at any time or for any period.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">If you provide information to us — for example, when you request a guide, book a call, or open an account — you agree that the information you provide is accurate, current, and complete, and you agree to keep it updated. You are responsible for maintaining the confidentiality of any credentials associated with your account and for all activity that occurs under them.</p>
+      </section>
+
+      <section id="no-advice" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">4. No Financial, Investment, Tax, or Legal Advice</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">The content on the Services is provided for general informational and educational purposes only. <strong style="font-weight:700;color:#15273B;">Grace Precious Metals is a precious metals dealer. We are not a financial advisor, investment adviser, broker-dealer, accountant, or law firm, and nothing on the Services constitutes financial, investment, tax, or legal advice, or a recommendation that any particular product, transaction, or investment strategy is suitable for you.</strong></p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">Decisions about your retirement savings and precious metals purchases are your own. You should consult your own financial, tax, and legal advisors before making any decision, and you should independently verify any facts or figures before relying on them.</p>
+      </section>
+
+      <section id="risk" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">5. Precious Metals Risk Disclosure</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">Purchasing physical precious metals involves risk and is not suitable for everyone. The prices of gold and other precious metals fluctuate and can rise or fall significantly, and past performance does not guarantee future results. The value of your holdings may go down as well as up, and you could lose money. Precious metals do not pay interest or dividends, and physical metals may be less liquid than other assets. We do not guarantee, assure, or promise any particular market movement, price, return, or profit.</p>
+      </section>
+
+      <section id="orders" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">6. Orders, Pricing, and Purchases</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">Any prices, spreads, or fees displayed on the Services are provided for general information and are subject to change based on market conditions. The price applicable to a purchase or sale is the price confirmed at the time your order is placed and accepted in accordance with the account and transaction documents you receive, which govern the specific terms of your purchase, storage, and any buyback.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">The Services describe our general pricing approach, but the binding commercial terms of any transaction are those set out in your written account and order documentation. Precious metals purchases for an individual retirement account are also subject to the rules of the applicable custodian and depository and to Internal Revenue Service requirements governing eligible metals. Nothing on the Services is an offer to buy or sell metals in any jurisdiction where doing so would be unlawful.</p>
+      </section>
+
+      <section id="ip" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">7. Intellectual Property</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">The Services and all of their content, features, and functionality — including text, graphics, logos, images, and software — are owned by Grace Precious Metals or its licensors and are protected by United States and international copyright, trademark, and other intellectual property laws. The “Grace Precious Metals” name, logo, and related names and slogans are our trademarks. You may not use them without our prior written permission.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">We grant you a limited, revocable, non-exclusive, non-transferable license to access and use the Services for your own personal, non-commercial purposes. No other right, title, or interest in the Services is transferred to you, and all rights not expressly granted are reserved.</p>
+      </section>
+
+      <section id="submissions" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">8. Your Submissions</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">If you submit any content to us or through the Services — such as questions, comments, or other materials — you represent that you own or control the rights to that content and that it does not violate these Terms or the rights of any third party. You grant us a non-exclusive, royalty-free, worldwide, transferable, and sub-licensable license to use, reproduce, and display that content in connection with operating and providing the Services and our business. Do not submit any confidential information you do not wish us to use.</p>
+      </section>
+
+      <section id="prohibited" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">9. Prohibited Uses</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">You agree not to use the Services:</p><ul style="margin:0 0 16px;padding-left:22px;"><li style="font-size:17px;line-height:1.65;color:#41505E;margin:0 0 10px;">In any way that violates any applicable federal, state, local, or international law or regulation.</li><li style="font-size:17px;line-height:1.65;color:#41505E;margin:0 0 10px;">To transmit or facilitate any unsolicited or unauthorized advertising or promotional material.</li><li style="font-size:17px;line-height:1.65;color:#41505E;margin:0 0 10px;">To impersonate or attempt to impersonate Grace Precious Metals, an employee, or any other person.</li><li style="font-size:17px;line-height:1.65;color:#41505E;margin:0 0 10px;">To introduce any malware, or to attempt to gain unauthorized access to, interfere with, damage, or disrupt the Services, their servers, or any connected systems.</li><li style="font-size:17px;line-height:1.65;color:#41505E;margin:0 0 10px;">To use any robot, scraper, or other automated means to access the Services for any purpose without our permission.</li><li style="font-size:17px;line-height:1.65;color:#41505E;margin:0 0 10px;">To engage in any conduct that restricts or inhibits anyone’s use of the Services or that we reasonably determine may harm Grace Precious Metals or users of the Services.</li></ul>
+      </section>
+
+      <section id="communications" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">10. Communications and Text Messaging Consent</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">By providing your telephone number and opting in, you consent to receive calls and text (SMS) messages from us or on our behalf, including through automated dialing technology, at the number you provide. These may include customer-service, account-servicing, and marketing messages. Consent to receive marketing calls or texts is not a condition of purchasing any product or service.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">Message frequency varies, and message and data rates may apply. You may opt out of text messages at any time by replying STOP to any message, and you may revoke consent to marketing calls or texts by contacting us at privacy@gracepreciousmetals.com or (800) 555-0199. After you opt out, we may send a single confirmation message and may continue to contact you for non-marketing purposes as permitted by law. Information you provide as part of our text-messaging program, including your opt-in and consent, is handled as described in our Privacy Policy and is not shared or sold to third parties for their own marketing purposes.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">You also consent to receive communications from us electronically, and you agree that all agreements, notices, disclosures, and other communications we provide electronically satisfy any legal requirement that such communications be in writing.</p>
+      </section>
+
+      <section id="posted" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">11. Information Posted on the Services</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">We may post information, articles, and third-party content on the Services. This information is provided for general purposes and may not always be accurate, complete, or current. Any reliance you place on such information is at your own risk. Third-party content does not necessarily reflect our opinion, and we are not responsible for its accuracy. We may change the content of the Services at any time without notice and are not obligated to update it.</p>
+      </section>
+
+      <section id="links" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">12. Third-Party Links</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">The Services may contain links to third-party websites or resources, including those of custodians, depositories, and marketing partners. We provide these links for convenience only and do not control and are not responsible for the content, products, or practices of any third party. Your use of third-party websites is at your own risk and subject to their terms and policies.</p>
+      </section>
+
+      <section id="warranties" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">13. Disclaimer of Warranties</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">THE SERVICES AND ALL CONTENT AND ITEMS OBTAINED THROUGH THEM ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS, WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. TO THE FULLEST EXTENT PERMITTED BY LAW, GRACE PRECIOUS METALS DISCLAIMS ALL WARRANTIES, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICES WILL BE ACCURATE, RELIABLE, UNINTERRUPTED, ERROR-FREE, OR FREE OF HARMFUL COMPONENTS.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">Some jurisdictions do not allow the exclusion of certain warranties, so some of the above exclusions may not apply to you.</p>
+      </section>
+
+      <section id="liability" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">14. Limitation of Liability</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">TO THE FULLEST EXTENT PERMITTED BY LAW, GRACE PRECIOUS METALS AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL, ARISING OUT OF OR RELATING TO YOUR USE OF, OR INABILITY TO USE, THE SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">Nothing in these Terms limits liability that cannot be limited under applicable law. Some jurisdictions do not allow certain limitations of liability, so some of the above may not apply to you.</p>
+      </section>
+
+      <section id="arbitration" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">15. Dispute Resolution and Arbitration</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;"></p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;"><strong style="font-weight:700;color:#15273B;">Informal resolution first.</strong> Before starting any formal proceeding, you agree to contact us at privacy@gracepreciousmetals.com and give us a good-faith opportunity to resolve the dispute for at least 30 days.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;"><strong style="font-weight:700;color:#15273B;">Binding arbitration.</strong> If we cannot resolve a dispute informally, you and Grace Precious Metals agree that any dispute arising out of or relating to these Terms or the Services will be resolved by final and binding individual arbitration administered by a recognized arbitration provider under its applicable rules, rather than in court, except that either party may bring an individual claim in small-claims court or seek relief in court to protect its intellectual property rights.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;"><strong style="font-weight:700;color:#15273B;">Class action waiver.</strong> YOU AND GRACE PRECIOUS METALS AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN AN INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY CLASS OR REPRESENTATIVE PROCEEDING.</p><p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;"><strong style="font-weight:700;color:#15273B;">Jury trial.</strong> By agreeing to arbitration, you and Grace Precious Metals waive the right to a trial by jury for covered disputes.</p>
+      </section>
+
+      <section id="governing" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">16. Governing Law and Venue</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">These Terms and any dispute arising out of or relating to them or the Services are governed by the laws of the State of California, without regard to its conflict-of-laws rules. Subject to Section 15, you agree that any dispute not subject to arbitration will be brought exclusively in the state or federal courts located in California, and you consent to the jurisdiction of those courts.</p>
+      </section>
+
+      <section id="indemnification" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">17. Indemnification</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">You agree to defend, indemnify, and hold harmless Grace Precious Metals and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including reasonable attorneys’ fees, arising out of or relating to your violation of these Terms or your misuse of the Services.</p>
+      </section>
+
+      <section id="timelimit" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">18. Time Limit on Claims</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">To the extent permitted by applicable law, any claim or cause of action arising out of or relating to the Services or these Terms must be commenced within one (1) year after the claim or cause of action arises, otherwise it is permanently barred.</p>
+      </section>
+
+      <section id="waiver" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">19. Waiver and Severability</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">No waiver by us of any term or condition will be deemed a continuing waiver or a waiver of any other term. If any provision of these Terms is held to be invalid or unenforceable, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will remain in full force and effect.</p>
+      </section>
+
+      <section id="entire" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">20. Entire Agreement</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">These Terms and our Privacy Policy, together with any account and transaction documents you enter into with us, constitute the entire agreement between you and Grace Precious Metals regarding the Services and supersede any prior agreements on that subject. Nothing in these Terms creates any partnership, joint venture, or agency relationship between you and Grace Precious Metals. We may assign these Terms in connection with a merger, acquisition, or sale of assets.</p>
+      </section>
+
+      <section id="contact" style="border-top:1px solid rgba(15,29,46,.1);padding-top:38px;margin-top:38px;">
+        <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em;color:#15273B;margin:0 0 16px;scroll-margin-top:90px;">21. Contact Us</h2>
+<p style="font-size:17px;line-height:1.7;color:#41505E;margin:0 0 16px;">Questions about these Terms may be directed to:</p><div style="background:#FBF8F1;border:1px solid rgba(15,29,46,.1);border-left:3px solid #B0863C;border-radius:8px;padding:24px 28px;"><div style="font-family:Newsreader,serif;font-size:20px;font-weight:600;color:#15273B;margin-bottom:8px;">Grace Precious Metals</div><p style="font-size:16.5px;line-height:1.6;color:#41505E;margin:0;">5150 E. Pacific Coast Hwy, Suite 200<br>Long Beach, California 90804<br>Email: <a href="mailto:privacy@gracepreciousmetals.com" style="color:#96702E;text-decoration:underline;text-underline-offset:2px;">privacy@gracepreciousmetals.com</a><br>Phone: <a href="tel:+18005550199" style="color:#96702E;text-decoration:underline;text-underline-offset:2px;">(800) 555-0199</a></p></div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#0B1520;color:#9FAEBC;margin-top:54px;">
+    <div style="max-width:1180px;margin:0 auto;padding:64px 28px 40px;">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;">
+            <svg viewBox="0 0 80 90" width="36" height="40" style="display:block;flex-shrink:0;" aria-hidden="true">
+              <defs><linearGradient id="ftGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2A24E"></stop><stop offset="1" stop-color="#A47B34"></stop></linearGradient></defs>
+              <g fill="url(#ftGold)"><circle cx="40" cy="8" r="5"></circle><rect x="37.5" y="12" width="5" height="60" rx="1"></rect><rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect><rect x="25" y="71" width="30" height="5" rx="1.5"></rect><rect x="18" y="78" width="44" height="7" rx="2.5"></rect></g>
+              <g stroke="url(#ftGold)" stroke-width="2" fill="none" stroke-linecap="round"><path d="M10 24 L2 47 M10 24 L18 47"></path><path d="M70 24 L62 47 M70 24 L78 47"></path></g>
+              <g fill="url(#ftGold)"><path d="M0 47 Q10 65 20 47 Z"></path><path d="M60 47 Q70 65 80 47 Z"></path></g>
+            </svg>
+            <span style="display:flex;flex-direction:column;line-height:1;">
+              <span style="font-family:'Newsreader',serif;font-size:24px;font-weight:600;color:#F4EEE2;">Grace</span>
+              <span style="font-size:9px;font-weight:700;letter-spacing:.24em;color:#C99B49;text-transform:uppercase;margin-top:4px;">Precious Metals</span>
+            </span>
+          </div>
+          <p style="font-size:15px;line-height:1.6;margin:0 0 18px;max-width:300px;">The Gold IRA with a published price. 11.1% all-in, buyback at wholesale, salaried experts.</p>
+          <a href="tel:+18005550199" style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#F4EEE2;" style-hover="color:#D2A24E;">(800) 555-0199</a>
+          <p style="font-size:14px;margin:8px 0 0;">Mon–Fri, 8am–4pm PST · 5150 E. Pacific Coast Hwy, Suite 200, Long Beach, California 90804</p>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Pages</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Pricing.dc.html" style-hover="color:#F4EEE2;">Our pricing</a>
+            <a href="#top" style-hover="color:#F4EEE2;">How a rollover works</a>
+            <a href="Grace Precious Metals Home.dc.html" style-hover="color:#F4EEE2;">Why invest</a>
+            <a href="Grace Precious Metals Who We Are.dc.html" style-hover="color:#F4EEE2;">Who we are</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Resources</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Resources.dc.html" style-hover="color:#F4EEE2;">Resources library</a>
+            <a href="Grace Precious Metals Buyback.dc.html" style-hover="color:#F4EEE2;">Buyback policy</a>
+            <a href="Grace Precious Metals Numismatic.dc.html" style-hover="color:#F4EEE2;">Numismatic coins</a>
+            <a href="Grace Precious Metals FAQ.dc.html" style-hover="color:#F4EEE2;">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Talk to us</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Briefing.dc.html" style-hover="color:#F4EEE2;">Get the briefing</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style-hover="color:#F4EEE2;">Talk to an expert</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style-hover="color:#F4EEE2;">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding-top:28px;">
+        <p style="font-size:12.5px;line-height:1.6;color:#6B7785;margin:0 0 20px;">Grace Precious Metals is a precious metals dealer. It does not provide investment, legal, or tax advice, and nothing on this site is a recommendation to buy or sell any asset. Gold IRAs require an IRS-approved custodian and depository. Precious metals carry risk, including possible loss of principal, and prices can go down as well as up. Past performance does not guarantee future results. Consult your own qualified financial, legal, and tax advisors before making any decision. Grace’s published price is 11.1% all-in, with buyback at wholesale and no ongoing accrued fee. Cost comparisons reflect a category-typical round-trip range of 17%–33%, drawn from published research; no specific company is named. References to regulatory action describe allegations and settlements in matters brought against other companies; they are not findings against any company named here.</p>
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;">
+          <div style="display:flex;gap:18px;flex-wrap:wrap;">
+            <a href="Grace Precious Metals Privacy Policy.dc.html" style-hover="color:#F4EEE2;">Privacy</a>
+            <a href="Grace Precious Metals Terms.dc.html" style-hover="color:#F4EEE2;">Terms</a>
+            <a href="#" style-hover="color:#F4EEE2;">Disclosures</a>
+            
+          </div>
+          <span>© 2026 Grace Precious Metals. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { openMenu: null };
+  renderVals() {
+    return {
+      pricingOpen: this.state.openMenu === 'pricing',
+      goldIraOpen: this.state.openMenu === 'goldira',
+      whoWeAreOpen: this.state.openMenu === 'whoweare',
+      pricingCaret: this.state.openMenu === 'pricing' ? 'rotate(180deg)' : 'rotate(0deg)',
+      goldIraCaret: this.state.openMenu === 'goldira' ? 'rotate(180deg)' : 'rotate(0deg)',
+      whoWeAreCaret: this.state.openMenu === 'whoweare' ? 'rotate(180deg)' : 'rotate(0deg)',
+      openPricing: () => this.setState({ openMenu: 'pricing' }),
+      openGoldIra: () => this.setState({ openMenu: 'goldira' }),
+      openWhoWeAre: () => this.setState({ openMenu: 'whoweare' }),
+      closeMenu: () => this.setState({ openMenu: null }),
+      roles: [
+        { n: '1', title: 'Custodian', body: 'Administers your IRA. Independent of Grace, IRS-approved. You can call them directly to verify your account at any time.', bg: '#FBF8F1', border: 'rgba(15,29,46,.1)', numBg: 'rgba(176,134,60,.14)', numColor: '#B0863C', titleColor: '#15273B', bodyColor: '#5A6675' },
+        { n: '2', title: 'Depository', body: 'Holds your physical metal. Independent of Grace, IRS-approved. Insured and independently audited.', bg: '#FBF8F1', border: 'rgba(15,29,46,.1)', numBg: 'rgba(176,134,60,.14)', numColor: '#B0863C', titleColor: '#15273B', bodyColor: '#5A6675' },
+        { n: '3', title: 'Dealer', body: 'Supplies the metal and handles the paperwork that connects the three parties. This is where Grace sits — and the only one of the three we are.', bg: '#15273B', border: '#15273B', numBg: '#D2A24E', numColor: '#0F1D2E', titleColor: '#FBF7EE', bodyColor: '#C3CCD6' },
+      ],
+      funding: [
+        { name: '401(k)', note: 'Current or former employer' },
+        { name: 'Traditional IRA', note: 'Bank or brokerage' },
+        { name: 'Roth IRA', note: 'Post-tax contributions' },
+        { name: 'SEP IRA', note: 'Common for self-employed' },
+      ],
+      metals: [
+        { metal: 'Gold', purity: '99.5%+', examples: 'American Eagle, Canadian Maple, Austrian Philharmonic, accredited bars.' },
+        { metal: 'Silver', purity: '99.9%+', examples: 'American Silver Eagle, Canadian Silver Maple, accredited bars.' },
+        { metal: 'Platinum', purity: '99.95%+', examples: 'American Platinum Eagle, accredited bars.' },
+        { metal: 'Palladium', purity: '99.95%+', examples: 'Canadian Palladium Maple, accredited bars.' },
+      ],
+      steps: [
+        { n: '01', title: 'Open the IRA', body: 'You sign the custodian’s paperwork. Grace handles the process.' },
+        { n: '02', title: 'Initiate the transfer', body: 'Funds move directly from your existing account to the new custodian. Grace handles the paperwork.' },
+        { n: '03', title: 'Choose your metals', body: 'You and your Grace expert agree which IRS-eligible bullion you want to buy.' },
+        { n: '04', title: 'Settlement & storage', body: 'The custodian pays Grace; Grace ships the metal to the depository; the depository confirms receipt and your account is funded.' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#F7F2E9;font-family:'Public Sans',system-ui,sans-serif;color:#26323F;-webkit-font-smoothing:antialiased;font-size:18px;line-height:1.6;}
+  img{display:block;max-width:100%;}
+  a{text-decoration:none;color:inherit;}
+</style>
+  <link rel="stylesheet" href="responsive.css">
+</helmet>
+
+<div style="background:#F7F2E9;color:#26323F;overflow-x:clip;">
+
+  <!-- ===== UTILITY BAR ===== -->
+  <div style="background:#0F1D2E;color:#D9E0E8;font-size:14px;letter-spacing:.02em;">
+    <div style="max-width:1180px;margin:0 auto;padding:9px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <span style="color:#C99B49;font-weight:600;">PROVERBS 11:1 — “A JUST WEIGHT IS HIS DELIGHT.”</span>
+      <span style="opacity:.85;">IRS-approved custodian &amp; depository · Salaried experts</span>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <header style="position:sticky;top:0;z-index:50;background:rgba(247,242,233,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(15,29,46,.12);">
+    <nav style="max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="Grace Precious Metals Home.dc.html" style="display:flex;align-items:center;gap:13px;">
+        <svg viewBox="0 0 80 90" width="38" height="43" style="display:block;flex-shrink:0;" aria-hidden="true">
+          <defs><linearGradient id="navGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2A24E"></stop><stop offset="1" stop-color="#9A7230"></stop></linearGradient></defs>
+          <g fill="url(#navGold)"><circle cx="40" cy="8" r="5"></circle><rect x="37.5" y="12" width="5" height="60" rx="1"></rect><rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect><rect x="25" y="71" width="30" height="5" rx="1.5"></rect><rect x="18" y="78" width="44" height="7" rx="2.5"></rect></g>
+          <g stroke="url(#navGold)" stroke-width="2" fill="none" stroke-linecap="round"><path d="M10 24 L2 47 M10 24 L18 47"></path><path d="M70 24 L62 47 M70 24 L78 47"></path></g>
+          <g fill="url(#navGold)"><path d="M0 47 Q10 65 20 47 Z"></path><path d="M60 47 Q70 65 80 47 Z"></path></g>
+        </svg>
+        <span style="display:flex;flex-direction:column;line-height:1;">
+          <span style="font-family:'Newsreader',serif;font-size:27px;font-weight:600;color:#3A2A18;letter-spacing:-.005em;">Grace</span>
+          <span style="font-size:10px;font-weight:700;letter-spacing:.26em;color:#B0863C;text-transform:uppercase;margin-top:4px;">Precious Metals</span>
+        </span>
+      </a>
+      <div class="gpm-nav-links" style="display:flex;align-items:center;gap:30px;font-size:15.5px;font-weight:500;color:#3B4855;">
+        <div style="position:relative;" onMouseEnter="{{ openPricing }}" onMouseLeave="{{ closeMenu }}">
+          <a href="#top" style="padding:4px 0;border-bottom:2px solid #B0863C;color:#15273B;display:inline-flex;align-items:center;gap:7px;">Pricing<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ pricingCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ pricingOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:600px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Pricing</div>
+                <a href="Grace Precious Metals Buyback.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:22px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
+                    <span style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#2A1F12;">Buyback at wholesale</span>
+                    <span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span>
+                  </div>
+                  <p style="font-size:16px;line-height:1.5;color:#5A5043;margin:7px 0 0;max-width:440px;">When you sell, we pay you the wholesale price of precious metals. The full policy and how the round-trip cost works.</p>
+                </a>
+                <a href="Grace Precious Metals Numismatic.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:22px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
+                    <span style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#2A1F12;">Numismatic coins</span>
+                    <span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span>
+                  </div>
+                  <p style="font-size:16px;line-height:1.5;color:#5A5043;margin:7px 0 0;max-width:440px;">Why we do not sell numismatic, proof, or rare coins, and what to be careful of when other dealers offer them.</p>
+                </a>
+                <a href="#top" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding-top:22px;margin-top:4px;font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#B0863C;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#96702E;">See full pricing page →</a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <div style="position:relative;" onMouseEnter="{{ openGoldIra }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Rollover.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Gold IRA<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ goldIraCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ goldIraOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:560px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Gold IRA</div>
+                <a href="Grace Precious Metals Rollover.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">How it works</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">What a Gold IRA is, how you fund it, what you can hold, and how long it takes to set up.</p>
+                </a>
+                <a href="Grace Precious Metals Why Invest.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Why invest</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">The reasons people hold gold in a retirement portfolio — and what gold does and does not do.</p>
+                </a>
+                <a href="Grace Precious Metals FAQ.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">FAQs</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Twelve questions we get most often, answered in plain language.</p>
+                </a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <div style="position:relative;" onMouseEnter="{{ openWhoWeAre }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Who We Are.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Who we are<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ whoWeAreCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ whoWeAreOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:560px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Who we are</div>
+                <a href="Grace Precious Metals Who We Are.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">The founders</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">The people who built Grace — Bill Armour, Andrew Armour, and Duncan Cumming.</p>
+                </a>
+                <a href="Grace Precious Metals Williams Story.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Bill’s story</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Bill Armour’s testimony — why he started Grace, in his own voice.</p>
+                </a>
+                <a href="Grace Precious Metals How We Operate.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">How we operate</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Licensing, custody, expert pay, pricing governance, and what we do with your data.</p>
+                </a>
+                <a href="Grace Precious Metals Brand Ambassador.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Our Brand Ambassador</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Marjorie Taylor Greene on why she stands with Grace, and the shared ground behind it.</p>
+                </a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <a href="Grace Precious Metals Resources.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Resources</a>
+      </div>
+      <div class="gpm-nav-cta" style="display:flex;align-items:center;gap:14px;">
+        <a href="Grace Precious Metals Briefing.dc.html" style="background:#D2A24E;color:#0F1D2E;font-weight:700;font-size:15px;padding:12px 20px;border-radius:4px;white-space:nowrap;box-shadow:0 6px 16px -6px rgba(210,162,78,.7);" style-hover="background:#E3B75F;box-shadow:0 8px 20px -6px rgba(210,162,78,.85);">Get the Briefing</a>
+        <a href="Grace Precious Metals Advisor.dc.html" style="background:#15273B;color:#F4EEE2;font-weight:600;font-size:15px;padding:12px 20px;border-radius:4px;white-space:nowrap;" style-hover="background:#0F1D2E;">Talk to an Expert</a>
+      </div>
+    <input type="checkbox" id="gpmNav" class="gpm-nav-cb">
+        <label for="gpmNav" class="gpm-burger" aria-label="Open menu" style="cursor:pointer;width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid rgba(15,29,46,.2);border-radius:7px;">
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+        </label>
+        <div class="gpm-mobile-panel" style="position:absolute;top:100%;left:0;right:0;background:#F3ECDE;border-top:1px solid rgba(15,29,46,.12);box-shadow:0 30px 60px -24px rgba(15,29,46,.45);padding:8px 28px 24px;z-index:70;">
+          <a href="Grace Precious Metals Pricing.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Pricing</a>
+          <a href="Grace Precious Metals Rollover.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Gold IRA</a>
+          <a href="Grace Precious Metals Why Invest.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Why invest</a>
+          <a href="Grace Precious Metals FAQ.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">FAQs</a>
+          <a href="Grace Precious Metals Who We Are.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Who we are</a>
+          <a href="Grace Precious Metals Resources.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Resources</a>
+          <div style="display:flex;gap:12px;margin-top:18px;">
+            <a href="Grace Precious Metals Briefing.dc.html" style="flex:1;text-align:center;background:#D2A24E;color:#0F1D2E;font-weight:700;font-size:15px;padding:13px 12px;border-radius:4px;">Get the Briefing</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style="flex:1;text-align:center;background:#15273B;color:#F4EEE2;font-weight:600;font-size:15px;padding:13px 12px;border-radius:4px;">Talk to an Expert</a>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+  <span id="top"></span>
+
+  <!-- ===== HERO ===== -->
+  <section style="background:#0F1D2E;color:#F4EEE2;">
+    <div style="max-width:1180px;margin:0 auto;padding:84px 28px 0;">
+      <p style="font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:#C99B49;font-weight:700;margin:0 0 30px;">Our pricing</p>
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:54px;align-items:center;padding-bottom:74px;">
+        <div class="gpm-stack-divider" style="text-align:center;border-right:1px solid rgba(201,155,73,.3);padding-right:54px;">
+          <div class="gpm-hero-num" style="font-family:'Newsreader',serif;font-size:148px;line-height:.9;font-weight:600;color:#D2A24E;letter-spacing:-.02em;">11.1%</div>
+          <div style="font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#9FAEBC;font-weight:600;margin-top:14px;">Spread, all-in</div>
+        </div>
+        <div>
+          <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:54px;line-height:1.08;letter-spacing:-.02em;margin:0 0 22px;color:#FBF7EE;">Our spread on gold is 11.1%, all-in.</h1>
+          <p style="font-size:21px;line-height:1.55;color:#CFD7E0;margin:0 0 14px;max-width:620px;">That is the entire cost of entry. <strong style="color:#fff;font-weight:600;">No admin fee. No setup fee. No annual account fee. No exit fee.</strong> When you sell, we buy back at the live wholesale price — never below.</p>
+          <p style="font-size:17px;color:#9FAEBC;margin:0 0 32px;">The same spread for every saver. No tiers, no volume discounts, no hidden schedule.</p>
+          <div style="display:flex;gap:16px;flex-wrap:wrap;">
+            <a href="tel:+18005550199" style="background:#B0863C;color:#fff;font-weight:600;font-size:18px;padding:16px 28px;border-radius:3px;" style-hover="background:#C99B49;">Talk to a salaried expert</a>
+            <a href="Grace Precious Metals Home.dc.html#briefing" style="border:1.5px solid rgba(244,238,226,.55);color:#F4EEE2;font-weight:600;font-size:18px;padding:15px 28px;border-radius:3px;" style-hover="border-color:#F4EEE2;background:rgba(244,238,226,.08);">Get the briefing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(201,155,73,.28);background:rgba(8,16,26,.55);">
+      <div style="max-width:1180px;margin:0 auto;padding:18px 28px;font-size:14.5px;color:#90A0AE;line-height:1.55;">
+        Spread applies to standard IRS-eligible bullion (Gold Eagles, Gold Maple Leafs, qualifying bars). Custodian and depository fees are third-party charges billed separately — sample figures below. Published spread subject to periodic review.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY THIS NUMBER ===== -->
+  <section style="max-width:1180px;margin:0 auto;padding:92px 28px;">
+    <div style="display:grid;grid-template-columns:1.25fr .95fr;gap:64px;align-items:start;">
+      <div>
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">Why this number is on this page</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:42px;line-height:1.12;letter-spacing:-.015em;margin:0 0 24px;color:#15273B;">Because a just weight is His delight.</h2>
+        <p style="font-size:19px;line-height:1.65;color:#41505E;margin:0 0 18px;">Most Gold IRA companies do not publish their spread. They quote it on the phone, after they have your attention and your time. We believe that is backwards. If you are entrusting your retirement savings to a company, you deserve to know the cost before you speak to anyone.</p>
+        <p style="font-size:19px;line-height:1.65;color:#41505E;margin:0;">The pricing below is what every saver pays. There is no tiered pricing, no volume discount for larger rollovers, and no hidden schedule for smaller ones. The spread is the spread.</p>
+      </div>
+      <div style="background:#15273B;border-radius:10px;padding:44px 40px;color:#EDE5D4;align-self:stretch;display:flex;flex-direction:column;justify-content:center;">
+        <p style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#C99B49;font-weight:700;margin:0 0 22px;">Proverbs 11:1</p>
+        <blockquote style="margin:0;font-family:'Newsreader',serif;font-style:italic;font-weight:400;font-size:27px;line-height:1.4;color:#FBF7EE;">“A false balance is an abomination to the Lord, but a just weight is His delight.”</blockquote>
+        <p style="font-size:16px;color:#AEBAC7;margin:24px 0 0;line-height:1.55;">The weight is what you are charged. Ours is visible, accurate, and constant.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMITMENTS ===== -->
+  <section style="background:#FBF8F1;border-top:1px solid rgba(15,29,46,.08);border-bottom:1px solid rgba(15,29,46,.08);">
+    <div style="max-width:1180px;margin:0 auto;padding:90px 28px;">
+      <div style="max-width:680px;margin:0 0 48px;">
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">Main commitments</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:44px;line-height:1.1;letter-spacing:-.015em;margin:0;color:#15273B;">The structure behind the number.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(15,29,46,.12);border:1px solid rgba(15,29,46,.12);border-radius:8px;overflow:hidden;">
+        <div style="background:#fff;padding:40px;">
+          <div style="font-family:'Newsreader',serif;font-size:18px;color:#B0863C;font-weight:600;margin-bottom:14px;">01</div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:24px;margin:0 0 12px;color:#15273B;">Published spread, 11.1% all-in</h3>
+          <p style="font-size:17px;color:#5A6675;margin:0;line-height:1.6;">Published on this page, not quoted on the phone. It includes every cost of entry — no admin fee, no setup fee, no annual account fee. The number you see is the number you pay.</p>
+        </div>
+        <div style="background:#fff;padding:40px;">
+          <div style="font-family:'Newsreader',serif;font-size:18px;color:#B0863C;font-weight:600;margin-bottom:14px;">02</div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:24px;margin:0 0 12px;color:#15273B;">Buyback at wholesale, never below</h3>
+          <p style="font-size:17px;color:#5A6675;margin:0;line-height:1.6;">When you decide to sell, Grace buys back your bullion at our wholesale acquisition price. No exit spread, no liquidation fee, no markdown. Your gold is worth what the market says it is worth.</p>
+        </div>
+        <div style="background:#fff;padding:40px;">
+          <div style="font-family:'Newsreader',serif;font-size:18px;color:#B0863C;font-weight:600;margin-bottom:14px;">03</div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:24px;margin:0 0 12px;color:#15273B;">Standard IRS-eligible bullion only</h3>
+          <p style="font-size:17px;color:#5A6675;margin:0;line-height:1.6;">American Gold Eagles, Canadian Gold Maple Leafs, and LBMA-approved bars. No numismatic coins, no “exclusive” products, no inflated premiums on rare or collectible items.</p>
+        </div>
+        <div style="background:#fff;padding:40px;">
+          <div style="font-family:'Newsreader',serif;font-size:18px;color:#B0863C;font-weight:600;margin-bottom:14px;">04</div>
+          <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:24px;margin:0 0 12px;color:#15273B;">Salaried experts. No commission.</h3>
+          <p style="font-size:17px;color:#5A6675;margin:0;line-height:1.6;">Our experts are salaried employees. They do not earn commission on your purchase. Their job is to answer your questions — not to close a sale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW WE GET PAID ===== -->
+  <section style="max-width:1180px;margin:0 auto;padding:92px 28px;">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;">
+      <div>
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">How we get paid</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:42px;line-height:1.12;letter-spacing:-.015em;margin:0 0 22px;color:#15273B;">The spread is our revenue.</h2>
+        <p style="font-size:19px;line-height:1.65;color:#41505E;margin:0 0 18px;">Grace earns revenue from the spread between the price we pay for bullion and the price we charge you. That spread is 11.1%, applied once, at the time of purchase. We earn no ongoing fees, no commission on custodian or depository charges, and no revenue when you sell.</p>
+        <p style="font-size:18px;line-height:1.6;color:#5A6675;margin:0;">If the economics ever require raising the spread, we will publish the new figure on this page before it takes effect. No such change is planned.</p>
+      </div>
+      <div style="background:#FBF8F1;border:1px solid rgba(15,29,46,.1);border-radius:10px;overflow:hidden;box-shadow:0 18px 50px -34px rgba(15,29,46,.4);">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:22px 28px;border-bottom:1px solid rgba(15,29,46,.1);">
+          <span style="font-size:17px;color:#26323F;">Entry spread</span>
+          <span style="font-family:'Newsreader',serif;font-size:26px;font-weight:600;color:#15273B;">11.1%</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:22px 28px;border-bottom:1px solid rgba(15,29,46,.1);">
+          <span style="font-size:17px;color:#26323F;">Ongoing fees to Grace</span>
+          <span style="font-family:'Newsreader',serif;font-size:26px;font-weight:600;color:#3E7B53;">$0</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:22px 28px;border-bottom:1px solid rgba(15,29,46,.1);">
+          <span style="font-size:17px;color:#26323F;">Exit fee on buyback</span>
+          <span style="font-family:'Newsreader',serif;font-size:26px;font-weight:600;color:#3E7B53;">$0</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:22px 28px;">
+          <span style="font-size:17px;color:#26323F;">Commission on the sale</span>
+          <span style="font-family:'Newsreader',serif;font-size:26px;font-weight:600;color:#3E7B53;">$0</span>
+        </div>
+        <div style="background:#15273B;color:#EDE5D4;padding:18px 28px;font-size:15px;letter-spacing:.02em;">The spread is the whole revenue model.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT WE DON'T CHARGE ===== -->
+  <section style="background:#15273B;color:#EDE5D4;">
+    <div style="max-width:1180px;margin:0 auto;padding:88px 28px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;">
+      <div>
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#C99B49;font-weight:700;margin:0 0 16px;">What we don’t charge</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:42px;line-height:1.12;margin:0 0 22px;color:#FBF7EE;">No admin fee. No setup fee. No exit fee.</h2>
+        <p style="font-size:19px;line-height:1.65;color:#C3CCD6;margin:0 0 18px;">Many Gold IRA companies layer fees on top of their spread: account setup fees, annual administration fees, wire transfer fees, liquidation fees. Grace charges none of these. The 11.1% spread is the complete cost of doing business with us.</p>
+        <p style="font-size:18px;line-height:1.6;color:#9FAEBC;margin:0;">Your IRA will carry two third-party charges that are not set by Grace and are billed directly by the custodian and depository — shown alongside.</p>
+      </div>
+      <div style="background:#FBF8F1;border-radius:10px;padding:36px;color:#26323F;">
+        <p style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#7A8794;font-weight:700;margin:0 0 22px;">Two costs that are not ours</p>
+        <div style="padding-bottom:22px;border-bottom:1px solid rgba(15,29,46,.12);margin-bottom:22px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:6px;">
+            <span style="font-weight:600;font-size:18px;color:#15273B;">Custodian annual fee</span>
+            <span style="font-family:'Newsreader',serif;font-size:24px;font-weight:600;color:#15273B;white-space:nowrap;">≈ $250<span style="font-size:14px;color:#7A8794;">/yr</span></span>
+          </div>
+          <p style="font-size:15px;color:#5A6675;margin:0;line-height:1.5;">Varies by custodian; billed directly to your IRA.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:6px;">
+            <span style="font-weight:600;font-size:18px;color:#15273B;">Depository storage fee</span>
+            <span style="font-family:'Newsreader',serif;font-size:24px;font-weight:600;color:#15273B;white-space:nowrap;">≈ $100<span style="font-size:14px;color:#7A8794;">/yr</span></span>
+          </div>
+          <p style="font-size:15px;color:#5A6675;margin:0;line-height:1.5;">Flat rate for storage and insurance; varies by depository.</p>
+        </div>
+        <p style="font-size:13px;color:#8A95A1;margin:22px 0 0;line-height:1.5;">Sample figures from current partner schedules. Grace receives no portion of these fees.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORKED EXAMPLES ===== -->
+  <section style="max-width:1180px;margin:0 auto;padding:92px 28px;">
+    <div style="max-width:680px;margin:0 0 50px;">
+      <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">What the numbers look like</p>
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:44px;line-height:1.1;letter-spacing:-.015em;margin:0;color:#15273B;">On a real rollover.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;">
+      <sc-for list="{{ examples }}" as="ex" hint-placeholder-count="3">
+        <div style="background:#FBF8F1;border:1px solid rgba(15,29,46,.1);border-radius:10px;overflow:hidden;">
+          <div style="background:#15273B;padding:26px 28px;color:#EDE5D4;">
+            <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:10px;">Example {{ ex.n }}</div>
+            <div style="font-family:'Newsreader',serif;font-size:38px;font-weight:600;color:#FBF7EE;line-height:1;">{{ ex.amount }}</div>
+            <div style="font-size:13px;color:#9FAEBC;margin-top:6px;">Rollover amount</div>
+          </div>
+          <div style="padding:8px 28px 26px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);">
+              <span style="font-size:16px;color:#41505E;">Grace spread (11.1%)</span>
+              <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:600;color:#15273B;">{{ ex.spread }}</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);">
+              <span style="font-size:16px;color:#41505E;">Bullion to vault</span>
+              <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:600;color:#15273B;">{{ ex.bullion }}</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);">
+              <span style="font-size:16px;color:#41505E;">Admin · setup · annual</span>
+              <span style="font-family:'Newsreader',serif;font-size:20px;font-weight:600;color:#3E7B53;">$0</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:18px 0 6px;">
+              <span style="font-size:16px;color:#15273B;font-weight:600;">Total entry cost</span>
+              <span style="font-family:'Newsreader',serif;font-size:24px;font-weight:600;color:#B0863C;">{{ ex.spread }}</span>
+            </div>
+            <p style="font-size:13.5px;color:#7A8794;margin:14px 0 0;">Exit cost: $0 markup. Buyback at wholesale.</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <!-- comparison -->
+    <div style="margin-top:34px;background:#0F1D2E;border-radius:10px;padding:48px;color:#EDE5D4;display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;">
+      <div style="text-align:center;border-right:1px solid rgba(201,155,73,.3);padding-right:48px;">
+        <div style="font-family:'Newsreader',serif;font-size:74px;line-height:.9;font-weight:600;color:#D2A24E;">17–33%</div>
+        <div style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9FAEBC;font-weight:600;margin-top:12px;">Category round-trip</div>
+      </div>
+      <div>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:28px;line-height:1.25;margin:0 0 14px;color:#FBF7EE;">The comparison, at category level.</h3>
+        <p style="font-size:18px;line-height:1.6;color:#C3CCD6;margin:0;">Published research and regulatory enforcement records show the typical Gold IRA costs 17%–33% on a round-trip basis — entry spread, ongoing fees, and exit costs combined. <strong style="color:#fff;">Grace’s entry cost is 11.1%, buyback is at wholesale, and the round-trip cost is the entry cost.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section style="background:#FBF8F1;border-top:1px solid rgba(15,29,46,.08);">
+    <div style="max-width:920px;margin:0 auto;padding:90px 28px;">
+      <div style="margin:0 0 44px;">
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">Common questions</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:44px;line-height:1.1;letter-spacing:-.015em;margin:0;color:#15273B;">About our pricing.</h2>
+      </div>
+      <div style="display:grid;gap:14px;">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+          <details style="background:#fff;border:1px solid rgba(15,29,46,.1);border-radius:8px;padding:4px 28px;">
+            <summary style="list-style:none;cursor:pointer;padding:22px 0;font-family:'Newsreader',serif;font-size:21px;font-weight:600;color:#15273B;display:flex;justify-content:space-between;align-items:center;gap:20px;">{{ f.q }}<span style="color:#B0863C;font-size:26px;font-weight:400;flex-shrink:0;">+</span></summary>
+            <p style="font-size:17px;line-height:1.65;color:#41505E;margin:0;padding:0 0 24px;">{{ f.a }}</p>
+          </details>
+        </sc-for>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:40px;">
+        <a href="tel:+18005550199" style="background:#B0863C;color:#fff;font-weight:600;font-size:18px;padding:16px 28px;border-radius:3px;" style-hover="background:#96702E;">Talk to a salaried expert</a>
+        <a href="Grace Precious Metals Home.dc.html#briefing" style="border:1.5px solid rgba(15,29,46,.3);color:#15273B;font-weight:600;font-size:18px;padding:15px 28px;border-radius:3px;" style-hover="border-color:#15273B;background:rgba(15,29,46,.04);">Get the briefing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#0B1520;color:#9FAEBC;margin-top:54px;">
+    <div style="max-width:1180px;margin:0 auto;padding:64px 28px 40px;">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;">
+            <svg viewBox="0 0 80 90" width="36" height="40" style="display:block;flex-shrink:0;" aria-hidden="true">
+              <defs><linearGradient id="ftGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2A24E"></stop><stop offset="1" stop-color="#A47B34"></stop></linearGradient></defs>
+              <g fill="url(#ftGold)"><circle cx="40" cy="8" r="5"></circle><rect x="37.5" y="12" width="5" height="60" rx="1"></rect><rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect><rect x="25" y="71" width="30" height="5" rx="1.5"></rect><rect x="18" y="78" width="44" height="7" rx="2.5"></rect></g>
+              <g stroke="url(#ftGold)" stroke-width="2" fill="none" stroke-linecap="round"><path d="M10 24 L2 47 M10 24 L18 47"></path><path d="M70 24 L62 47 M70 24 L78 47"></path></g>
+              <g fill="url(#ftGold)"><path d="M0 47 Q10 65 20 47 Z"></path><path d="M60 47 Q70 65 80 47 Z"></path></g>
+            </svg>
+            <span style="display:flex;flex-direction:column;line-height:1;">
+              <span style="font-family:'Newsreader',serif;font-size:24px;font-weight:600;color:#F4EEE2;">Grace</span>
+              <span style="font-size:9px;font-weight:700;letter-spacing:.24em;color:#C99B49;text-transform:uppercase;margin-top:4px;">Precious Metals</span>
+            </span>
+          </div>
+          <p style="font-size:15px;line-height:1.6;margin:0 0 18px;max-width:300px;">The Gold IRA with a published price. 11.1% all-in, buyback at wholesale, salaried experts.</p>
+          <a href="tel:+18005550199" style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#F4EEE2;" style-hover="color:#D2A24E;">(800) 555-0199</a>
+          <p style="font-size:14px;margin:8px 0 0;">Mon–Fri, 8am–4pm PST · 5150 E. Pacific Coast Hwy, Suite 200, Long Beach, California 90804</p>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Pages</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="#top" style-hover="color:#F4EEE2;">Our pricing</a>
+            <a href="Grace Precious Metals Rollover.dc.html" style-hover="color:#F4EEE2;">How a rollover works</a>
+            <a href="Grace Precious Metals Home.dc.html" style-hover="color:#F4EEE2;">Why invest</a>
+            <a href="Grace Precious Metals Who We Are.dc.html" style-hover="color:#F4EEE2;">Who we are</a>
+            <a href="Grace Precious Metals Williams Story.dc.html" style-hover="color:#F4EEE2;">Bill’s story</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Resources</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Resources.dc.html" style-hover="color:#F4EEE2;">Resources library</a>
+            <a href="Grace Precious Metals Buyback.dc.html" style-hover="color:#F4EEE2;">Buyback policy</a>
+            <a href="Grace Precious Metals Numismatic.dc.html" style-hover="color:#F4EEE2;">Numismatic coins</a>
+            <a href="#faq" style-hover="color:#F4EEE2;">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Talk to us</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Briefing.dc.html" style-hover="color:#F4EEE2;">Get the briefing</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style-hover="color:#F4EEE2;">Talk to an expert</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style-hover="color:#F4EEE2;">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding-top:28px;">
+        <p style="font-size:12.5px;line-height:1.6;color:#6B7785;margin:0 0 20px;">Grace Precious Metals is a precious metals dealer. It does not provide investment, legal, or tax advice, and nothing on this site is a recommendation to buy or sell any asset. Gold IRAs require an IRS-approved custodian and depository. Precious metals carry risk, including possible loss of principal, and prices can go down as well as up. Past performance does not guarantee future results. Consult your own qualified financial, legal, and tax advisors before making any decision. Grace’s published price is 11.1% all-in, with buyback at wholesale and no ongoing accrued fee. Cost comparisons reflect a category-typical round-trip range of 17%–33%, drawn from published research; no specific company is named. References to regulatory action describe allegations and settlements in matters brought against other companies; they are not findings against any company named here.</p>
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;">
+          <div style="display:flex;gap:18px;flex-wrap:wrap;">
+            <a href="Grace Precious Metals Privacy Policy.dc.html" style-hover="color:#F4EEE2;">Privacy</a>
+            <a href="Grace Precious Metals Terms.dc.html" style-hover="color:#F4EEE2;">Terms</a>
+            <a href="#" style-hover="color:#F4EEE2;">Disclosures</a>
+          </div>
+          <span>© 2026 Grace Precious Metals. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { openMenu: null };
+  renderVals() {
+    return {
+      pricingOpen: this.state.openMenu === 'pricing',
+      goldIraOpen: this.state.openMenu === 'goldira',
+      whoWeAreOpen: this.state.openMenu === 'whoweare',
+      pricingCaret: this.state.openMenu === 'pricing' ? 'rotate(180deg)' : 'rotate(0deg)',
+      goldIraCaret: this.state.openMenu === 'goldira' ? 'rotate(180deg)' : 'rotate(0deg)',
+      whoWeAreCaret: this.state.openMenu === 'whoweare' ? 'rotate(180deg)' : 'rotate(0deg)',
+      openPricing: () => this.setState({ openMenu: 'pricing' }),
+      openGoldIra: () => this.setState({ openMenu: 'goldira' }),
+      openWhoWeAre: () => this.setState({ openMenu: 'whoweare' }),
+      closeMenu: () => this.setState({ openMenu: null }),
+      examples: [
+        { n: '01', amount: '$75,000',  spread: '$8,325',  bullion: '$66,675' },
+        { n: '02', amount: '$150,000', spread: '$16,650', bullion: '$133,350' },
+        { n: '03', amount: '$250,000', spread: '$27,750', bullion: '$222,250' },
+      ],
+      faqs: [
+        { q: 'Why is your cost higher than the spot price of gold?', a: 'The 11.1% spread is the complete cost of doing business with Grace — no other fees layered on top. A single coin’s spot premium does not include the cost of running an IRS-compliant Gold IRA business: licensed experts, compliance, custodian relationships, depository logistics, and overhead. Other companies separate these into ongoing fees, setup fees, and exit charges. We don’t. The spread is everything.' },
+        { q: 'Does the 11.1% apply to every product you sell?', a: 'Yes. Grace sells only standard IRS-eligible bullion — American Gold Eagles, Canadian Gold Maple Leafs, and LBMA-approved bars — and the 11.1% spread applies uniformly to every product. We do not sell numismatic coins, “rare” coins, or any product that carries a different markup.' },
+        { q: 'What happens when I want to sell my gold?', a: 'Grace buys your bullion back at the live wholesale price on the day of sale. There is no exit spread, no liquidation fee, and no markdown. The depository releases your metal directly to us, and the proceeds are wired to your IRA without any deduction by Grace.' },
+        { q: 'Are there any ongoing fees from Grace?', a: 'No. Grace earns revenue only from the entry spread. We do not charge an annual account fee, a monthly fee, or any ongoing maintenance charge. The custodian and depository each charge their own annual fees — billed directly to your IRA — and Grace does not receive any portion of those.' },
+        { q: 'How does 11.1% compare to what other companies charge?', a: 'Published research and regulatory enforcement records place the typical Gold IRA round-trip cost between 17% and 33%, combining entry spread, ongoing fees, and exit charges. Grace’s round-trip cost is the entry spread of 11.1%, because we charge nothing on the way out.' },
+        { q: 'Can the spread change in the future?', a: 'If the economics of the business ever require raising the spread, the new figure will be published on this page before it takes effect. No such change is planned, and the current 11.1% is what you are quoted.' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

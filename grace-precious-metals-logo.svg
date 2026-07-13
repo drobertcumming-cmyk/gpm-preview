@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Grace Precious Metals">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D2A24E"></stop>
+      <stop offset="0.5" stop-color="#B0863C"></stop>
+      <stop offset="1" stop-color="#8E6A2C"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <g transform="translate(70,49) scale(2.9)">
+    <g fill="url(#gold)">
+      <circle cx="40" cy="8" r="5"></circle>
+      <rect x="37.5" y="12" width="5" height="60" rx="1"></rect>
+      <rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect>
+      <rect x="25" y="71" width="30" height="5" rx="1.5"></rect>
+      <rect x="18" y="78" width="44" height="7" rx="2.5"></rect>
+    </g>
+    <g stroke="url(#gold)" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M10 24 L2 47 M10 24 L18 47"></path>
+      <path d="M70 24 L62 47 M70 24 L78 47"></path>
+    </g>
+    <g fill="url(#gold)">
+      <path d="M0 47 Q10 65 20 47 Z"></path>
+      <path d="M60 47 Q70 65 80 47 Z"></path>
+    </g>
+  </g>
+
+  
+  <text x="372" y="212" font-family="Newsreader, Georgia, &#39;Times New Roman&#39;, serif" font-size="184" font-weight="600" letter-spacing="-1" fill="#3A2A18">Grace</text>
+  <text x="376" y="300" font-family="&#39;Public Sans&#39;, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="20" fill="url(#gold)">PRECIOUS METALS</text>
+</svg>

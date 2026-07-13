@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#F7F2E9;font-family:'Public Sans',system-ui,sans-serif;color:#26323F;-webkit-font-smoothing:antialiased;font-size:18px;line-height:1.6;}
+  img{display:block;max-width:100%;}
+  a{text-decoration:none;color:inherit;}
+  input,textarea{font-family:inherit;}
+  input:focus,textarea:focus{outline:none;border-color:#B0863C;box-shadow:0 0 0 3px rgba(176,134,60,.15);}
+</style>
+  <link rel="stylesheet" href="responsive.css">
+</helmet>
+
+
+<p style="margin: 0"><br></p><div style="background:#F7F2E9;color:#26323F;overflow-x:clip;">
+
+  <!-- ===== UTILITY BAR ===== -->
+  <div style="background:#0F1D2E;color:#D9E0E8;font-size:14px;letter-spacing:.02em;">
+    <div style="max-width:1180px;margin:0 auto;padding:9px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <span style="color:#C99B49;font-weight:600;">PROVERBS 11:1 — “A JUST WEIGHT IS HIS DELIGHT.”</span>
+      <span style="opacity:.85;">IRS-approved custodian &amp; depository · Salaried experts</span>
+    </div>
+  </div>
+
+  <span id="top"></span>
+
+  <!-- ===== NAV ===== -->
+  <header style="position:sticky;top:0;z-index:50;background:rgba(247,242,233,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(15,29,46,.12);">
+    <nav style="max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="Grace Precious Metals Home.dc.html" style="display:flex;align-items:center;gap:13px;">
+        <svg viewBox="0 0 80 90" width="38" height="43" style="display:block;flex-shrink:0;" aria-hidden="true">
+          <defs><linearGradient id="navGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2A24E"></stop><stop offset="1" stop-color="#9A7230"></stop></linearGradient></defs>
+          <g fill="url(#navGold)"><circle cx="40" cy="8" r="5"></circle><rect x="37.5" y="12" width="5" height="60" rx="1"></rect><rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect><rect x="25" y="71" width="30" height="5" rx="1.5"></rect><rect x="18" y="78" width="44" height="7" rx="2.5"></rect></g>
+          <g stroke="url(#navGold)" stroke-width="2" fill="none" stroke-linecap="round"><path d="M10 24 L2 47 M10 24 L18 47"></path><path d="M70 24 L62 47 M70 24 L78 47"></path></g>
+          <g fill="url(#navGold)"><path d="M0 47 Q10 65 20 47 Z"></path><path d="M60 47 Q70 65 80 47 Z"></path></g>
+        </svg>
+        <span style="display:flex;flex-direction:column;line-height:1;">
+          <span style="font-family:'Newsreader',serif;font-size:27px;font-weight:600;color:#3A2A18;letter-spacing:-.005em;">Grace</span>
+          <span style="font-size:10px;font-weight:700;letter-spacing:.26em;color:#B0863C;text-transform:uppercase;margin-top:4px;">Precious Metals</span>
+        </span>
+      </a>
+      <div class="gpm-nav-links" style="display:flex;align-items:center;gap:30px;font-size:15.5px;font-weight:500;color:#3B4855;">
+        <div style="position:relative;" onMouseEnter="{{ openPricing }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Pricing.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Pricing<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ pricingCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ pricingOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:600px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Pricing</div>
+                <a href="Grace Precious Metals Buyback.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:22px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#2A1F12;">Buyback at wholesale</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:16px;line-height:1.5;color:#5A5043;margin:7px 0 0;max-width:440px;">When you sell, we pay you the wholesale price of precious metals. The full policy and how the round-trip cost works.</p>
+                </a>
+                <a href="Grace Precious Metals Numismatic.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:22px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#2A1F12;">Numismatic coins</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:16px;line-height:1.5;color:#5A5043;margin:7px 0 0;max-width:440px;">Why we do not sell numismatic, proof, or rare coins, and what to be careful of when other dealers offer them.</p>
+                </a>
+                <a href="Grace Precious Metals Pricing.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding-top:22px;margin-top:4px;font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#B0863C;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#96702E;">See full pricing page →</a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <div style="position:relative;" onMouseEnter="{{ openGoldIra }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Rollover.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Gold IRA<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ goldIraCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ goldIraOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:560px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Gold IRA</div>
+                <a href="Grace Precious Metals Rollover.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">How it works</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">What a Gold IRA is, how you fund it, what you can hold, and how long it takes to set up.</p>
+                </a>
+                <a href="Grace Precious Metals Why Invest.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Why invest</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">The reasons people hold gold in a retirement portfolio — and what gold does and does not do.</p>
+                </a>
+                <a href="Grace Precious Metals FAQ.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">FAQs</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Twelve questions we get most often, answered in plain language.</p>
+                </a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <div style="position:relative;" onMouseEnter="{{ openWhoWeAre }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Who We Are.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Who we are<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ whoWeAreCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ whoWeAreOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:560px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Who we are</div>
+                <a href="Grace Precious Metals Who We Are.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">The founders</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">The people who built Grace — Bill Armour, Andrew Armour, and Duncan Cumming.</p>
+                </a>
+                <a href="Grace Precious Metals Williams Story.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Bill’s story</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Bill Armour’s testimony — why he started Grace, in his own voice.</p>
+                </a>
+                <a href="Grace Precious Metals How We Operate.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">How we operate</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Licensing, custody, expert pay, pricing governance, and what we do with your data.</p>
+                </a>
+                <a href="Grace Precious Metals Brand Ambassador.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Our Brand Ambassador</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Marjorie Taylor Greene on why she stands with Grace, and the shared ground behind it.</p>
+                </a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <a href="Grace Precious Metals Resources.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Resources</a>
+      </div>
+      <div class="gpm-nav-cta" style="display:flex;align-items:center;gap:14px;">
+        <a href="Grace Precious Metals Briefing.dc.html" style="background:#D2A24E;color:#0F1D2E;font-weight:700;font-size:15px;padding:12px 20px;border-radius:4px;white-space:nowrap;box-shadow:0 6px 16px -6px rgba(210,162,78,.7);" style-hover="background:#E3B75F;box-shadow:0 8px 20px -6px rgba(210,162,78,.85);">Get the Briefing</a>
+        <a href="Grace Precious Metals Advisor.dc.html" style="background:#15273B;color:#F4EEE2;font-weight:600;font-size:15px;padding:12px 20px;border-radius:4px;white-space:nowrap;" style-hover="background:#0F1D2E;">Talk to an Expert</a>
+      </div>
+    <input type="checkbox" id="gpmNav" class="gpm-nav-cb">
+        <label for="gpmNav" class="gpm-burger" aria-label="Open menu" style="cursor:pointer;width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid rgba(15,29,46,.2);border-radius:7px;">
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+        </label>
+        <div class="gpm-mobile-panel" style="position:absolute;top:100%;left:0;right:0;background:#F3ECDE;border-top:1px solid rgba(15,29,46,.12);box-shadow:0 30px 60px -24px rgba(15,29,46,.45);padding:8px 28px 24px;z-index:70;">
+          <a href="Grace Precious Metals Pricing.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Pricing</a>
+          <a href="Grace Precious Metals Rollover.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Gold IRA</a>
+          <a href="Grace Precious Metals Why Invest.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Why invest</a>
+          <a href="Grace Precious Metals FAQ.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">FAQs</a>
+          <a href="Grace Precious Metals Who We Are.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Who we are</a>
+          <a href="Grace Precious Metals Resources.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Resources</a>
+          <div style="display:flex;gap:12px;margin-top:18px;">
+            <a href="Grace Precious Metals Briefing.dc.html" style="flex:1;text-align:center;background:#D2A24E;color:#0F1D2E;font-weight:700;font-size:15px;padding:13px 12px;border-radius:4px;">Get the Briefing</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style="flex:1;text-align:center;background:#15273B;color:#F4EEE2;font-weight:600;font-size:15px;padding:13px 12px;border-radius:4px;">Talk to an Expert</a>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+  <!-- ===== HERO (split: headline + guide + form, above the fold) ===== -->
+  <section style="background:#0F1D2E;color:#F4EEE2;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:radial-gradient(820px 540px at 20% 6%,rgba(201,155,73,.18),transparent 60%);"></div>
+    <div style="position:relative;max-width:1180px;margin:0 auto;padding:22px 28px 0;font-size:14px;color:#7E8B99;">
+      <a href="Grace Precious Metals Home.dc.html" style="color:#C99B49;" style-hover="color:#fff;">Home</a> <span style="color:#54616F;">/</span> Get the Briefing
+    </div>
+    <div class="gpm-hero-grid" style="position:relative;max-width:1180px;margin:0 auto;padding:26px 28px 72px;display:grid;gap:30px 56px;align-items:center;">
+
+      <!-- headline -->
+      <div class="gpm-hero-headline">
+        <div style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(201,155,73,.4);border-radius:100px;padding:7px 16px;margin-bottom:22px;">
+          <span style="width:7px;height:7px;border-radius:50%;background:#D2A24E;"></span>
+          <span style="font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:#D2A24E;font-weight:700;">The Secret Gold Briefing</span>
+        </div>
+        <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:50px;line-height:1.04;letter-spacing:-.02em;margin:0;color:#FBF7EE;">What the other Gold IRA companies hide from you.</h1>
+      </div>
+
+      <!-- supporting copy + guide image -->
+      <div class="gpm-hero-body">
+        <p style="font-size:19px;line-height:1.6;color:#CFD7E0;margin:0 0 22px;max-width:520px;">A free PDF that lays out our pricing in full, the tactics commissioned salespeople use, and exactly what to ask before you sign with anyone.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:11px 22px;margin-bottom:30px;">
+          <div style="display:flex;align-items:center;gap:8px;font-size:15px;color:#AEBAC7;"><span style="color:#D2A24E;">✓</span>Plain English</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:15px;color:#AEBAC7;"><span style="color:#D2A24E;">✓</span>PDF, yours to keep</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:15px;color:#AEBAC7;"><span style="color:#D2A24E;">✓</span>$0, no obligation</div>
+        </div>
+        <div style="display:flex;justify-content:center;">
+          <div style="position:relative;">
+            <div style="position:absolute;inset:-32px;background:radial-gradient(circle,rgba(201,155,73,.3),transparent 66%);filter:blur(6px);"></div>
+            <img src="https://drobertcumming-cmyk.github.io/gpm-website/images/briefing/secret-gold-briefing-cover.png" alt="The Secret Gold Briefing — Grace Precious Metals guide cover." style="position:relative;width:300px;max-width:100%;border-radius:8px;box-shadow:0 40px 84px -30px rgba(0,0,0,.72);border:1px solid rgba(201,155,73,.3);">
+          </div>
+        </div>
+      </div>
+
+      <!-- form -->
+      <div id="lead" class="gpm-hero-form" style="background:#15273B;border:1px solid rgba(201,155,73,.28);border-radius:14px;box-shadow:0 44px 90px -44px rgba(0,0,0,.6);overflow:hidden;scroll-margin-top:24px;">
+        <div style="padding:22px 30px;border-bottom:1px solid rgba(255,255,255,.09);text-align:center;">
+          <div style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#FBF7EE;line-height:1.2;">Send me the FREE GOLD briefing</div>
+          <div style="font-size:14.5px;color:#9DAAB8;margin-top:5px;">straight to your inbox</div>
+        </div>
+
+        <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:30px 34px 38px;text-align:center;">
+            <div style="width:54px;height:54px;border-radius:50%;background:rgba(201,155,73,.16);border:1px solid rgba(201,155,73,.4);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:26px;color:#D2A24E;">✓</div>
+            <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:26px;margin:0 0 10px;color:#FBF7EE;">On its way.</h3>
+            <p style="font-size:16px;line-height:1.6;color:#C3CCD6;margin:0;">Check your inbox for the Secret Gold Briefing. A salaried expert will follow up within two business days — no obligation.</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+          <div style="padding:22px 30px 30px;">
+            <div style="display:grid;gap:14px;">
+              <sc-if value="{{ hasErrors }}" hint-placeholder-val="{{ false }}">
+                <div style="background:rgba(200,80,79,.12);border:1px solid rgba(200,80,79,.45);border-radius:6px;padding:12px 15px;font-size:14px;line-height:1.5;color:#F0B4B4;display:flex;gap:9px;align-items:flex-start;"><span style="font-size:15px;flex-shrink:0;">⚠</span><span>Please check the highlighted fields so we can send your briefing.</span></div>
+              </sc-if>
+              <div>
+                <label style="display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#9DAAB8;font-weight:600;margin-bottom:7px;">Name</label>
+                <input type="text" value="{{ name }}" onInput="{{ onName }}" placeholder="Your first name" style="{{ nameStyle }}">
+                <sc-if value="{{ nameErr }}" hint-placeholder-val="{{ false }}"><p style="margin:7px 0 0;font-size:13px;color:#E8A0A0;display:flex;align-items:center;gap:7px;"><span style="font-size:14px;">⚠</span>{{ nameErr }}</p></sc-if>
+              </div>
+              <div>
+                <label style="display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#9DAAB8;font-weight:600;margin-bottom:7px;">Surname</label>
+                <input type="text" value="{{ surname }}" onInput="{{ onSurname }}" placeholder="Your surname" style="{{ surnameStyle }}">
+                <sc-if value="{{ surnameErr }}" hint-placeholder-val="{{ false }}"><p style="margin:7px 0 0;font-size:13px;color:#E8A0A0;display:flex;align-items:center;gap:7px;"><span style="font-size:14px;">⚠</span>{{ surnameErr }}</p></sc-if>
+              </div>
+              <div>
+                <label style="display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#9DAAB8;font-weight:600;margin-bottom:7px;">Email</label>
+                <input type="email" value="{{ email }}" onInput="{{ onEmail }}" placeholder="you@email.com" style="{{ emailStyle }}">
+                <sc-if value="{{ emailErr }}" hint-placeholder-val="{{ false }}"><p style="margin:7px 0 0;font-size:13px;color:#E8A0A0;display:flex;align-items:center;gap:7px;"><span style="font-size:14px;">⚠</span>{{ emailErr }}</p></sc-if>
+              </div>
+              <div>
+                <label style="display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#9DAAB8;font-weight:600;margin-bottom:7px;">Phone</label>
+                <input type="tel" value="{{ phone }}" onInput="{{ onPhone }}" placeholder="(800) 555-0199" style="{{ phoneStyle }}">
+                <sc-if value="{{ phoneErr }}" hint-placeholder-val="{{ false }}"><p style="margin:7px 0 0;font-size:13px;color:#E8A0A0;display:flex;align-items:center;gap:7px;"><span style="font-size:14px;">⚠</span>{{ phoneErr }}</p></sc-if>
+              </div>
+              <button onClick="{{ submit }}" style="margin-top:6px;width:100%;background:#B0863C;color:#fff;font-family:inherit;font-weight:600;font-size:17px;padding:15px;border:none;border-radius:6px;cursor:pointer;transition:background .15s;" style-hover="background:#C99B49;">Send me the briefing →</button>
+            </div>
+            <p style="font-size:12.5px;line-height:1.55;color:#8A97A5;margin:14px 0 0;">By clicking the below button, you agree that Grace Precious Metals can contact you at the e-mail and telephone number provided (including auto-dialed/auto-selected and prerecorded calls or text/SMS messages) with marketing offers. Msg. and data rates apply. Your consent to such contact is not required for purchase.</p>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT'S INSIDE ===== -->
+  <section style="background:#FBF8F1;border-top:1px solid rgba(15,29,46,.08);border-bottom:1px solid rgba(15,29,46,.08);">
+    <div style="max-width:1180px;margin:0 auto;padding:80px 28px;">
+      <div style="text-align:center;max-width:680px;margin:0 auto 46px;">
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">What’s inside</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.12;letter-spacing:-.015em;margin:0;color:#15273B;">Eight things every Gold IRA buyer should read first.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(15,29,46,.12);border:1px solid rgba(15,29,46,.12);border-radius:10px;overflow:hidden;">
+        <sc-for list="{{ inside }}" as="it" hint-placeholder-count="8">
+          <div style="background:#fff;padding:24px 28px;display:flex;gap:20px;align-items:baseline;">
+            <span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#B0863C;flex-shrink:0;width:26px;">{{ it.n }}</span>
+            <p style="font-size:16.5px;line-height:1.55;color:#41505E;margin:0;">{{ it.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="#lead" style="display:inline-block;background:#B0863C;color:#fff;font-weight:600;font-size:17px;padding:16px 30px;border-radius:3px;" style-hover="background:#96702E;">Send me the free briefing →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT HAPPENS NEXT ===== -->
+  <section style="background:#FBF8F1;border-top:1px solid rgba(15,29,46,.08);border-bottom:1px solid rgba(15,29,46,.08);">
+    <div style="max-width:1180px;margin:0 auto;padding:80px 28px;">
+      <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start;">
+        <div>
+          <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">What happens next</p>
+          <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:38px;line-height:1.14;letter-spacing:-.015em;margin:0;color:#15273B;">A salaried expert, not a salesperson.</h2>
+        </div>
+        <div>
+          <p style="font-size:19px;line-height:1.7;color:#41505E;margin:0 0 22px;">After you receive the briefing, a salaried Grace expert will follow up within two business days to ask whether you have questions and whether you’d like to talk further.</p>
+          <div style="display:grid;gap:1px;background:rgba(15,29,46,.12);border:1px solid rgba(15,29,46,.12);border-radius:10px;overflow:hidden;">
+            <div style="background:#fff;padding:22px 26px;display:flex;gap:16px;align-items:baseline;"><span style="color:#B0863C;font-size:19px;flex-shrink:0;">—</span><span style="font-size:17px;color:#41505E;">The expert is salaried, not commissioned.</span></div>
+            <div style="background:#fff;padding:22px 26px;display:flex;gap:16px;align-items:baseline;"><span style="color:#B0863C;font-size:19px;flex-shrink:0;">—</span><span style="font-size:17px;color:#41505E;">There is no cost to the call.</span></div>
+            <div style="background:#fff;padding:22px 26px;display:flex;gap:16px;align-items:baseline;"><span style="color:#B0863C;font-size:19px;flex-shrink:0;">—</span><span style="font-size:17px;color:#41505E;">You are not obligated to do anything as a result of it.</span></div>
+          </div>
+          <div style="margin-top:26px;">
+            <a href="Grace Precious Metals Advisor.dc.html" style="font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#B0863C;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#96702E;">Prefer to talk first? Talk to an expert →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#0B1520;color:#9FAEBC;margin-top:54px;">
+    <div style="max-width:1180px;margin:0 auto;padding:64px 28px 40px;">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;">
+            <svg viewBox="0 0 80 90" width="36" height="40" style="display:block;flex-shrink:0;" aria-hidden="true">
+              <defs><linearGradient id="ftGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2A24E"></stop><stop offset="1" stop-color="#A47B34"></stop></linearGradient></defs>
+              <g fill="url(#ftGold)"><circle cx="40" cy="8" r="5"></circle><rect x="37.5" y="12" width="5" height="60" rx="1"></rect><rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect><rect x="25" y="71" width="30" height="5" rx="1.5"></rect><rect x="18" y="78" width="44" height="7" rx="2.5"></rect></g>
+              <g stroke="url(#ftGold)" stroke-width="2" fill="none" stroke-linecap="round"><path d="M10 24 L2 47 M10 24 L18 47"></path><path d="M70 24 L62 47 M70 24 L78 47"></path></g>
+              <g fill="url(#ftGold)"><path d="M0 47 Q10 65 20 47 Z"></path><path d="M60 47 Q70 65 80 47 Z"></path></g>
+            </svg>
+            <span style="display:flex;flex-direction:column;line-height:1;">
+              <span style="font-family:'Newsreader',serif;font-size:24px;font-weight:600;color:#F4EEE2;">Grace</span>
+              <span style="font-size:9px;font-weight:700;letter-spacing:.24em;color:#C99B49;text-transform:uppercase;margin-top:4px;">Precious Metals</span>
+            </span>
+          </div>
+          <p style="font-size:15px;line-height:1.6;margin:0 0 18px;max-width:300px;">The Gold IRA with a published price. 11.1% all-in, buyback at wholesale, salaried experts.</p>
+          <a href="tel:+18005550199" style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#F4EEE2;" style-hover="color:#D2A24E;">(800) 555-0199</a>
+          <p style="font-size:14px;margin:8px 0 0;">Mon–Fri, 8am–4pm PST · 5150 E. Pacific Coast Hwy, Suite 200, Long Beach, California 90804</p>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Pages</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Pricing.dc.html" style-hover="color:#F4EEE2;">Our pricing</a>
+            <a href="Grace Precious Metals Rollover.dc.html" style-hover="color:#F4EEE2;">How a rollover works</a>
+            <a href="Grace Precious Metals Why Invest.dc.html" style-hover="color:#F4EEE2;">Why invest</a>
+            <a href="Grace Precious Metals Who We Are.dc.html" style-hover="color:#F4EEE2;">Who we are</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Resources</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Resources.dc.html" style-hover="color:#F4EEE2;">Resources library</a>
+            <a href="Grace Precious Metals Buyback.dc.html" style-hover="color:#F4EEE2;">Buyback policy</a>
+            <a href="Grace Precious Metals Numismatic.dc.html" style-hover="color:#F4EEE2;">Numismatic coins</a>
+            <a href="Grace Precious Metals FAQ.dc.html" style-hover="color:#F4EEE2;">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Talk to us</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Briefing.dc.html" style-hover="color:#F4EEE2;">Get the briefing</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style-hover="color:#F4EEE2;">Talk to an expert</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style-hover="color:#F4EEE2;">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding-top:28px;">
+        <p style="font-size:12.5px;line-height:1.6;color:#6B7785;margin:0 0 20px;">Grace Precious Metals is a precious metals dealer. It does not provide investment, legal, or tax advice, and nothing on this site is a recommendation to buy or sell any asset. Gold IRAs require an IRS-approved custodian and depository. Precious metals carry risk, including possible loss of principal, and prices can go down as well as up. Past performance does not guarantee future results. Consult your own qualified financial, legal, and tax advisors before making any decision. Grace’s published price is 11.1% all-in, with buyback at wholesale and no ongoing accrued fee. Cost comparisons reflect a category-typical round-trip range of 17%–33%, drawn from published research; no specific company is named. References to regulatory action describe allegations and settlements in matters brought against other companies; they are not findings against any company named here.</p>
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;">
+          <div style="display:flex;gap:18px;flex-wrap:wrap;">
+            <a href="Grace Precious Metals Privacy Policy.dc.html" style-hover="color:#F4EEE2;">Privacy</a>
+            <a href="Grace Precious Metals Terms.dc.html" style-hover="color:#F4EEE2;">Terms</a>
+            <a href="#" style-hover="color:#F4EEE2;">Disclosures</a>
+          </div>
+          <span>© 2026 Grace Precious Metals. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div></x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { openMenu: null, name: '', surname: '', email: '', phone: '', sent: false, errors: {}, attempted: false };
+  validate(s) {
+    const errors = {};
+    if (!s.name.trim()) errors.name = 'Please enter your name.';
+    else if (/\d/.test(s.name)) errors.name = 'Names can’t contain numbers.';
+    if (!s.surname.trim()) errors.surname = 'Please enter your surname.';
+    else if (/\d/.test(s.surname)) errors.surname = 'Names can’t contain numbers.';
+    if (!s.email.trim()) errors.email = 'Please enter your email address.';
+    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s.email.trim())) errors.email = 'That doesn’t look like a valid email address.';
+    if (!s.phone.trim()) errors.phone = 'Please enter a phone number.';
+    else if (s.phone.replace(/\D/g, '').length !== 10) errors.phone = 'Please enter a valid 10-digit US phone number.';
+    return errors;
+  }
+  fmtPhone(v) {
+    const d = v.replace(/\D/g, '').slice(0, 10);
+    if (d.length <= 3) return d;
+    if (d.length <= 6) return '(' + d.slice(0,3) + ') ' + d.slice(3);
+    return '(' + d.slice(0,3) + ') ' + d.slice(3,6) + '-' + d.slice(6);
+  }
+  renderVals() {
+    const errs = this.state.errors || {};
+    const inputStyle = (err) => 'width:100%;background:#0F1D2E;border:1px solid ' + (err ? '#C8504F' : 'rgba(201,155,73,.28)') + ';border-radius:6px;padding:13px 15px;font-size:16px;color:#F4EEE2;transition:border-color .15s,box-shadow .15s;';
+    return {
+      nameStyle: inputStyle(errs.name),
+      surnameStyle: inputStyle(errs.surname),
+      surname: this.state.surname,
+      surnameErr: errs.surname || '',
+      emailStyle: inputStyle(errs.email),
+      phoneStyle: inputStyle(errs.phone),
+      nameErr: errs.name || '',
+      emailErr: errs.email || '',
+      phoneErr: errs.phone || '',
+      hasErrors: Object.keys(errs).length > 0,
+      pricingOpen: this.state.openMenu === 'pricing',
+      goldIraOpen: this.state.openMenu === 'goldira',
+      whoWeAreOpen: this.state.openMenu === 'whoweare',
+      pricingCaret: this.state.openMenu === 'pricing' ? 'rotate(180deg)' : 'rotate(0deg)',
+      goldIraCaret: this.state.openMenu === 'goldira' ? 'rotate(180deg)' : 'rotate(0deg)',
+      whoWeAreCaret: this.state.openMenu === 'whoweare' ? 'rotate(180deg)' : 'rotate(0deg)',
+      openPricing: () => this.setState({ openMenu: 'pricing' }),
+      openGoldIra: () => this.setState({ openMenu: 'goldira' }),
+      openWhoWeAre: () => this.setState({ openMenu: 'whoweare' }),
+      closeMenu: () => this.setState({ openMenu: null }),
+      name: this.state.name,
+      email: this.state.email,
+      phone: this.state.phone,
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      onName: (e) => { const name = e.target.value.replace(/[0-9]/g, ''); this.setState(st => ({ name, errors: st.attempted ? this.validate({ ...st, name }) : st.errors })); },
+      onSurname: (e) => { const surname = e.target.value.replace(/[0-9]/g, ''); this.setState(st => ({ surname, errors: st.attempted ? this.validate({ ...st, surname }) : st.errors })); },
+      onEmail: (e) => { const email = e.target.value; this.setState(st => ({ email, errors: st.attempted ? this.validate({ ...st, email }) : st.errors })); },
+      onPhone: (e) => { const phone = this.fmtPhone(e.target.value); this.setState(st => ({ phone, errors: st.attempted ? this.validate({ ...st, phone }) : st.errors })); },
+      submit: () => { const errors = this.validate(this.state); if (Object.keys(errors).length) { this.setState({ errors, attempted: true }); return; } this.setState({ sent: true, errors: {} }); },
+      inside: [
+        { n: '1', text: 'Grace’s pricing in full — 11.1% spread, no admin fee, buyback at wholesale — with the math on a $100,000 rollover.' },
+        { n: '2', text: 'How the industry hides its real margin — the four pricing tactics every commissioned salesperson uses.' },
+        { n: '3', text: 'What Grace sells — standard bullion only. Why we refuse numismatic and “rare” coins, with the markup math (30–50%).' },
+        { n: '4', text: 'What “buyback at spot” actually means — and how to verify any company’s policy.' },
+        { n: '5', text: 'The rollover process, step by step — what you sign, what your custodian handles, what your timeline looks like.' },
+        { n: '6', text: 'The IRS rules that matter — eligibility, contribution limits, distribution timing, and what changes for inherited accounts.' },
+        { n: '7', text: 'What to ask before you sign — a one-page checklist of questions for any Gold IRA company, with what good and bad answers look like.' },
+        { n: '8', text: 'Grace’s structural commitments — the four operational promises this company is built on, written in plain English.' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

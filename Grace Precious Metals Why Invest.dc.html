@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#F7F2E9;font-family:'Public Sans',system-ui,sans-serif;color:#26323F;-webkit-font-smoothing:antialiased;font-size:18px;line-height:1.6;}
+  img{display:block;max-width:100%;}
+  a{text-decoration:none;color:inherit;}
+</style>
+  <link rel="stylesheet" href="responsive.css">
+</helmet>
+
+<div style="background:#F7F2E9;color:#26323F;overflow-x:clip;">
+
+  <div style="background:#0F1D2E;color:#D9E0E8;font-size:14px;letter-spacing:.02em;">
+    <div style="max-width:1180px;margin:0 auto;padding:9px 28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <span style="color:#C99B49;font-weight:600;">PROVERBS 11:1 — “A JUST WEIGHT IS HIS DELIGHT.”</span>
+      <span style="opacity:.85;">IRS-approved custodian &amp; depository · Salaried experts</span>
+    </div>
+  </div>
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(247,242,233,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(15,29,46,.12);">
+    <nav style="max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="Grace Precious Metals Home.dc.html" style="display:flex;align-items:center;gap:13px;">
+        <svg viewBox="0 0 80 90" width="38" height="43" style="display:block;flex-shrink:0;" aria-hidden="true">
+          <defs><linearGradient id="navGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2A24E"></stop><stop offset="1" stop-color="#9A7230"></stop></linearGradient></defs>
+          <g fill="url(#navGold)"><circle cx="40" cy="8" r="5"></circle><rect x="37.5" y="12" width="5" height="60" rx="1"></rect><rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect><rect x="25" y="71" width="30" height="5" rx="1.5"></rect><rect x="18" y="78" width="44" height="7" rx="2.5"></rect></g>
+          <g stroke="url(#navGold)" stroke-width="2" fill="none" stroke-linecap="round"><path d="M10 24 L2 47 M10 24 L18 47"></path><path d="M70 24 L62 47 M70 24 L78 47"></path></g>
+          <g fill="url(#navGold)"><path d="M0 47 Q10 65 20 47 Z"></path><path d="M60 47 Q70 65 80 47 Z"></path></g>
+        </svg>
+        <span style="display:flex;flex-direction:column;line-height:1;">
+          <span style="font-family:'Newsreader',serif;font-size:27px;font-weight:600;color:#3A2A18;letter-spacing:-.005em;">Grace</span>
+          <span style="font-size:10px;font-weight:700;letter-spacing:.26em;color:#B0863C;text-transform:uppercase;margin-top:4px;">Precious Metals</span>
+        </span>
+      </a>
+      <div class="gpm-nav-links" style="display:flex;align-items:center;gap:30px;font-size:15.5px;font-weight:500;color:#3B4855;">
+        <div style="position:relative;" onMouseEnter="{{ openPricing }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Pricing.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Pricing<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ pricingCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ pricingOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:600px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Pricing</div>
+                <a href="Grace Precious Metals Buyback.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:22px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#2A1F12;">Buyback at wholesale</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:16px;line-height:1.5;color:#5A5043;margin:7px 0 0;max-width:440px;">When you sell, we pay you the wholesale price of precious metals. The full policy and how the round-trip cost works.</p>
+                </a>
+                <a href="Grace Precious Metals Numismatic.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:22px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:23px;font-weight:600;color:#2A1F12;">Numismatic coins</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:16px;line-height:1.5;color:#5A5043;margin:7px 0 0;max-width:440px;">Why we do not sell numismatic, proof, or rare coins, and what to be careful of when other dealers offer them.</p>
+                </a>
+                <a href="Grace Precious Metals Pricing.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding-top:22px;margin-top:4px;font-family:'Newsreader',serif;font-size:18px;font-weight:600;color:#B0863C;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#96702E;">See full pricing page →</a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <div style="position:relative;" onMouseEnter="{{ openGoldIra }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Rollover.dc.html" style="padding:4px 0;border-bottom:2px solid #B0863C;color:#15273B;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;">Gold IRA<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ goldIraCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ goldIraOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:560px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Gold IRA</div>
+                <a href="Grace Precious Metals Rollover.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">How it works</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">What a Gold IRA is, how you fund it, what you can hold, and how long it takes to set up.</p>
+                </a>
+                <a href="#top" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Why invest</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">The reasons people hold gold in a retirement portfolio — and what gold does and does not do.</p>
+                </a>
+                <a href="Grace Precious Metals FAQ.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">FAQs</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Twelve questions we get most often, answered in plain language.</p>
+                </a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <div style="position:relative;" onMouseEnter="{{ openWhoWeAre }}" onMouseLeave="{{ closeMenu }}">
+          <a href="Grace Precious Metals Who We Are.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:7px;white-space:nowrap;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Who we are<span style="font-size:10px;color:#B0863C;display:inline-block;transform:{{ whoWeAreCaret }};transition:transform .2s;">▾</span></a>
+          <sc-if value="{{ whoWeAreOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:100%;left:-24px;padding-top:16px;width:560px;z-index:60;">
+              <div style="background:#F3ECDE;border:1px solid rgba(15,29,46,.1);border-radius:4px;box-shadow:0 36px 72px -34px rgba(15,29,46,.45);padding:30px 40px;">
+                <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin-bottom:6px;">Who we are</div>
+                <a href="Grace Precious Metals Who We Are.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">The founders</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">The people who built Grace — Bill Armour, Andrew Armour, and Duncan Cumming.</p>
+                </a>
+                <a href="Grace Precious Metals Williams Story.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Bill’s story</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Bill Armour’s testimony — why he started Grace, in his own voice.</p>
+                </a>
+                <a href="Grace Precious Metals How We Operate.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">How we operate</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Licensing, custody, expert pay, pricing governance, and what we do with your data.</p>
+                </a>
+                <a href="Grace Precious Metals Brand Ambassador.dc.html" style="display:block;border-top:1px solid rgba(15,29,46,.12);padding:20px 16px;margin:0 -16px;border-radius:3px;" style-hover="background:rgba(176,134,60,.08);">
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;"><span style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1F12;">Our Brand Ambassador</span><span style="color:#B0863C;font-size:19px;flex-shrink:0;">→</span></div>
+                  <p style="font-size:15.5px;line-height:1.5;color:#5A5043;margin:6px 0 0;max-width:420px;">Marjorie Taylor Greene on why she stands with Grace, and the shared ground behind it.</p>
+                </a>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+        <a href="Grace Precious Metals Resources.dc.html" style="padding:4px 0;border-bottom:2px solid transparent;" style-hover="border-bottom-color:#B0863C;color:#15273B;">Resources</a>
+      </div>
+      <div class="gpm-nav-cta" style="display:flex;align-items:center;gap:14px;">
+        <a href="Grace Precious Metals Briefing.dc.html" style="background:#D2A24E;color:#0F1D2E;font-weight:700;font-size:15px;padding:12px 20px;border-radius:4px;white-space:nowrap;box-shadow:0 6px 16px -6px rgba(210,162,78,.7);" style-hover="background:#E3B75F;box-shadow:0 8px 20px -6px rgba(210,162,78,.85);">Get the Briefing</a>
+        <a href="Grace Precious Metals Advisor.dc.html" style="background:#15273B;color:#F4EEE2;font-weight:600;font-size:15px;padding:12px 20px;border-radius:4px;white-space:nowrap;" style-hover="background:#0F1D2E;">Talk to an Expert</a>
+      </div>
+    <input type="checkbox" id="gpmNav" class="gpm-nav-cb">
+        <label for="gpmNav" class="gpm-burger" aria-label="Open menu" style="cursor:pointer;width:44px;height:44px;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid rgba(15,29,46,.2);border-radius:7px;">
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+          <span style="width:22px;height:2px;background:#15273B;display:block;border-radius:2px;"></span>
+        </label>
+        <div class="gpm-mobile-panel" style="position:absolute;top:100%;left:0;right:0;background:#F3ECDE;border-top:1px solid rgba(15,29,46,.12);box-shadow:0 30px 60px -24px rgba(15,29,46,.45);padding:8px 28px 24px;z-index:70;">
+          <a href="Grace Precious Metals Pricing.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Pricing</a>
+          <a href="Grace Precious Metals Rollover.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Gold IRA</a>
+          <a href="Grace Precious Metals Why Invest.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Why invest</a>
+          <a href="Grace Precious Metals FAQ.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">FAQs</a>
+          <a href="Grace Precious Metals Who We Are.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Who we are</a>
+          <a href="Grace Precious Metals Resources.dc.html" style="display:block;padding:15px 0;border-bottom:1px solid rgba(15,29,46,.1);font-size:17px;font-weight:600;color:#15273B;">Resources</a>
+          <div style="display:flex;gap:12px;margin-top:18px;">
+            <a href="Grace Precious Metals Briefing.dc.html" style="flex:1;text-align:center;background:#D2A24E;color:#0F1D2E;font-weight:700;font-size:15px;padding:13px 12px;border-radius:4px;">Get the Briefing</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style="flex:1;text-align:center;background:#15273B;color:#F4EEE2;font-weight:600;font-size:15px;padding:13px 12px;border-radius:4px;">Talk to an Expert</a>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+  <span id="top"></span>
+
+  <!-- HERO -->
+  <section style="background:#0F1D2E;color:#F4EEE2;">
+    <div style="max-width:1180px;margin:0 auto;padding:40px 28px 0;">
+      <div style="font-size:14px;color:#7E8B99;margin-bottom:34px;">
+        <a href="Grace Precious Metals Rollover.dc.html" style="color:#C99B49;" style-hover="color:#fff;">Gold IRA</a> <span style="color:#54616F;">/</span> Why invest
+      </div>
+      <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding-bottom:64px;">
+        <div>
+          <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:54px;line-height:1.06;letter-spacing:-.02em;margin:0 0 24px;color:#FBF7EE;">Why people invest in gold</h1>
+          <p style="font-size:21px;line-height:1.55;color:#CFD7E0;margin:0 0 32px;">People hold gold for two reasons: to diversify a portfolio so no single asset class carries all the weight, and to hold something outside the currency system — an asset whose value is not tied to anyone’s promise to pay. This page explains both, and what gold does and does not do.</p>
+          <div style="display:flex;gap:28px;flex-wrap:wrap;border-top:1px solid rgba(201,155,73,.25);padding-top:24px;">
+            <div><div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7E8B99;font-weight:600;margin-bottom:5px;">Read time</div><div style="font-family:'Newsreader',serif;font-size:19px;color:#F4EEE2;">~ 7 minutes</div></div>
+            <div><div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7E8B99;font-weight:600;margin-bottom:5px;">Last reviewed</div><div style="font-family:'Newsreader',serif;font-size:19px;color:#F4EEE2;">August 2026</div></div>
+          </div>
+        </div>
+        <div><img src="https://drobertcumming-cmyk.github.io/gpm-website/preview/banner-why-invest.jpg" alt="An older couple sitting on their porch, settled and contemplative" style="width:100%;border-radius:10px;border:1px solid rgba(201,155,73,.2);"></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(201,155,73,.28);background:rgba(8,16,26,.55);">
+      <div style="max-width:1180px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:repeat(4,1fr);">
+        <a href="#where-gold-sits" style="padding:22px;border-right:1px solid rgba(255,255,255,.08);display:flex;gap:12px;align-items:baseline;" style-hover="background:rgba(255,255,255,.04);"><span style="font-family:'Newsreader',serif;color:#C99B49;font-size:16px;">01</span><span style="font-size:16px;color:#CFD7E0;">Where gold sits</span></a>
+        <a href="#diversification" style="padding:22px;border-right:1px solid rgba(255,255,255,.08);display:flex;gap:12px;align-items:baseline;" style-hover="background:rgba(255,255,255,.04);"><span style="font-family:'Newsreader',serif;color:#C99B49;font-size:16px;">02</span><span style="font-size:16px;color:#CFD7E0;">Diversification</span></a>
+        <a href="#dollar-question" style="padding:22px;border-right:1px solid rgba(255,255,255,.08);display:flex;gap:12px;align-items:baseline;" style-hover="background:rgba(255,255,255,.04);"><span style="font-family:'Newsreader',serif;color:#C99B49;font-size:16px;">03</span><span style="font-size:16px;color:#CFD7E0;">The dollar question</span></a>
+        <a href="#price-of-gold" style="padding:22px;display:flex;gap:12px;align-items:baseline;" style-hover="background:rgba(255,255,255,.04);"><span style="font-family:'Newsreader',serif;color:#C99B49;font-size:16px;">04</span><span style="font-size:16px;color:#CFD7E0;">The price of gold</span></a>
+        <a href="#what-gold-does" style="padding:22px;border-top:1px solid rgba(255,255,255,.08);display:flex;gap:12px;align-items:baseline;" style-hover="background:rgba(255,255,255,.04);"><span style="font-family:'Newsreader',serif;color:#C99B49;font-size:16px;">05</span><span style="font-size:16px;color:#CFD7E0;">What gold does</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE GOLD SITS -->
+  <section id="where-gold-sits" style="max-width:1180px;margin:0 auto;padding:92px 28px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div>
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">01 — Where gold sits</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:42px;line-height:1.12;letter-spacing:-.015em;margin:0 0 20px;color:#15273B;">An asset that is not anyone else’s liability.</h2>
+        <p style="font-size:18px;line-height:1.65;color:#41505E;margin:0 0 16px;">The U.S. Treasury holds approximately 8,133 metric tonnes of gold — more than any other government in the world. According to the World Gold Council, central banks worldwide have been net buyers of gold for over a decade.</p>
+        <p style="font-size:18px;line-height:1.65;color:#41505E;margin:0 0 16px;">Sovereign wealth funds hold it. Pension funds hold it. Individuals hold it. All for the same reason.</p>
+        <p style="font-size:17px;line-height:1.6;color:#5A6675;margin:0;">This page is not a recommendation that you join them. It is an explanation of why they do.</p>
+      </div>
+      <div><img src="https://drobertcumming-cmyk.github.io/gpm-website/preview/section1-vault.jpg" alt="Institutional gold vault interior with stacked gold bars on shelving" style="width:100%;border-radius:10px;border:1px solid rgba(15,29,46,.1);box-shadow:0 24px 60px -36px rgba(15,29,46,.5);"></div>
+    </div>
+  </section>
+
+  <!-- DIVERSIFICATION -->
+  <section id="diversification" style="background:#FBF8F1;border-top:1px solid rgba(15,29,46,.08);border-bottom:1px solid rgba(15,29,46,.08);">
+    <div style="max-width:1180px;margin:0 auto;padding:90px 28px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+        <div>
+          <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">02 — Diversification, plainly stated</p>
+          <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.14;letter-spacing:-.015em;margin:0 0 20px;color:#15273B;">Different assets behave differently.</h2>
+          <p style="font-size:18px;line-height:1.65;color:#41505E;margin:0 0 16px;">Stocks tend to perform in periods of growth. Bonds tend to perform when rates fall. Real estate tends to track inflation over long periods. Gold sits outside all three — it generates no income and pays no dividends, but historically it has held purchasing power through periods when other assets struggle.</p>
+          <p style="font-size:17px;line-height:1.6;color:#5A6675;margin:0;">If you work with a financial planner, ask what allocation they recommend. Most suggest a single-digit percentage; some suggest more, some none. The disagreement is informed and real. Grace’s position is that gold has a legitimate role for the right person.</p>
+        </div>
+        <div style="background:#15273B;border-radius:12px;padding:44px 40px;color:#EDE5D4;align-self:start;">
+          <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:14px;">How much to hold</div>
+          <div style="font-family:'Newsreader',serif;font-size:34px;font-weight:600;color:#FBF7EE;line-height:1.1;margin-bottom:16px;">Your call. There’s no single right number.</div>
+          <p style="font-size:17px;line-height:1.6;color:#C3CCD6;margin:0;">How much of your savings belongs in gold depends on your situation — your age, your goals, and what else you hold. Some people hold a little, others a great deal. We don’t set that figure for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOLLAR QUESTION -->
+  <section id="dollar-question" style="max-width:1180px;margin:0 auto;padding:92px 28px;">
+    <div style="display:grid;grid-template-columns:1fr auto;gap:60px;align-items:center;">
+      <div style="max-width:680px;">
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">03 — The dollar question</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.14;letter-spacing:-.015em;margin:0 0 20px;color:#15273B;">The risk of measuring everything in one unit.</h2>
+        <p style="font-size:18px;line-height:1.65;color:#41505E;margin:0 0 16px;">The Federal Reserve targets 2% annual inflation. Compounded over thirty years, 2% reduces purchasing power by roughly 45%; over forty years, by roughly 55%. This is not a prediction — it is arithmetic against the Fed’s stated target.</p>
+        <p style="font-size:17px;line-height:1.6;color:#5A6675;margin:0;">People who hold gold for this reason are not betting on a collapse. They are noting that a portfolio entirely denominated in dollars carries a particular kind of risk — that the unit of measurement itself loses value over the holding period. Gold, priced in dollars, has historically risen as the dollar has weakened.</p>
+      </div>
+      <div style="text-align:center;border-left:1px solid rgba(15,29,46,.14);padding-left:60px;">
+        <div style="font-family:'Newsreader',serif;font-size:84px;line-height:.9;font-weight:600;color:#B0863C;">45%</div>
+        <div style="font-size:14px;letter-spacing:.06em;color:#5A6675;font-weight:600;margin-top:14px;max-width:240px;line-height:1.45;">Purchasing-power loss over 30 years at the Fed’s 2% target. Over 40 years, ≈ 55%.</div>
+        <div style="font-size:12px;color:#9CA7B2;margin-top:14px;">Source: Federal Reserve target rate</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE OF GOLD -->
+  <section id="price-of-gold" style="background:#F7F2E9;border-top:1px solid rgba(15,29,46,.08);">
+    <div style="max-width:1180px;margin:0 auto;padding:90px 28px;">
+      <div style="max-width:820px;margin:0 0 44px;">
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#B0863C;font-weight:700;margin:0 0 16px;">04 — The price of gold</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.14;letter-spacing:-.015em;margin:0 0 20px;color:#15273B;">What gold has done as the dollar has weakened.</h2>
+        <p style="font-size:18px;line-height:1.65;color:#41505E;margin:0;">Gold crossed $3,000 an ounce in early 2025 and trades near <strong style="color:#15273B;font-weight:700;">$4,140</strong> today — up about <strong style="color:#15273B;font-weight:700;">25%</strong> over the past year and roughly <strong style="color:#15273B;font-weight:700;">133%</strong> over five years. This is history, not a forecast: it shows what gold has done as the dollar’s purchasing power has fallen. It does not promise what gold will do next.</p>
+      </div>
+      <div style="background:#FBF8F1;border:1px solid rgba(15,29,46,.1);border-radius:14px;padding:36px 38px 30px;box-shadow:0 24px 60px -40px rgba(15,29,46,.4);">
+        <svg viewBox="0 0 1120 430" width="100%" style="display:block;overflow:visible;" role="img" aria-label="Line chart of gold spot price rising from 2021 to 2026" data-om-raster="">
+          <line x1="90" y1="340" x2="1075" y2="340" stroke="rgba(15,29,46,.14)" stroke-width="1"></line>
+          <line x1="90" y1="188" x2="1075" y2="188" stroke="rgba(15,29,46,.08)" stroke-width="1" stroke-dasharray="4 5"></line>
+          <text x="78" y="344" text-anchor="end" font-family="Public Sans, sans-serif" font-size="15" fill="#8A95A1">$0</text>
+          <text x="78" y="192" text-anchor="end" font-family="Public Sans, sans-serif" font-size="15" fill="#8A95A1">$2.5k</text>
+          <text x="90" y="372" text-anchor="start" font-family="Public Sans, sans-serif" font-size="15" fill="#8A95A1">2021</text>
+          <text x="1075" y="372" text-anchor="end" font-family="Public Sans, sans-serif" font-size="15" fill="#8A95A1">2026</text>
+          <path d="M100 262 C 210 262, 300 260, 380 250 C 470 239, 540 214, 620 178 C 700 142, 800 108, 1050 70 L 1050 340 L 100 340 Z" fill="url(#goldAreaWI)"></path>
+          <path d="M100 262 C 210 262, 300 260, 380 250 C 470 239, 540 214, 620 178 C 700 142, 800 108, 1050 70" fill="none" stroke="#B0863C" stroke-width="3.5" stroke-linecap="round"></path>
+          <defs><linearGradient id="goldAreaWI" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(201,155,73,.28)"></stop><stop offset="1" stop-color="rgba(201,155,73,0)"></stop></linearGradient></defs>
+          <circle cx="100" cy="262" r="5" fill="#B0863C"></circle>
+          <circle cx="380" cy="250" r="5" fill="#B0863C"></circle>
+          <circle cx="620" cy="178" r="6" fill="#FBF8F1" stroke="#B0863C" stroke-width="3"></circle>
+          <circle cx="1050" cy="70" r="7" fill="#B0863C" stroke="#FBF8F1" stroke-width="3"></circle>
+          <text x="612" y="160" text-anchor="end" font-family="Public Sans, sans-serif" font-size="15" fill="#6E6350">crossed $3,000 in early 2025</text>
+          <text x="1042" y="52" text-anchor="end" font-family="Newsreader, serif" font-size="19" font-weight="600" fill="#15273B">≈ $4,140 today</text>
+        </svg>
+        <p style="font-size:13.5px;line-height:1.6;color:#7A8794;margin:16px 0 0;">Spot price, USD per ounce, past five years. Real anchor points; production chart pulls live data. Past performance is not indicative of future returns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT GOLD DOES -->
+  <section id="what-gold-does" style="background:#15273B;color:#EDE5D4;">
+    <div style="max-width:1180px;margin:0 auto;padding:90px 28px;">
+      <div style="max-width:680px;margin:0 0 50px;">
+        <p style="font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:#C99B49;font-weight:700;margin:0 0 16px;">05 — What gold does</p>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:40px;line-height:1.14;margin:0;color:#FBF7EE;">Four things gold has done for as long as people have kept records.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);border-radius:10px;overflow:hidden;margin-bottom:40px;">
+        <sc-for list="{{ properties }}" as="p" hint-placeholder-count="4">
+          <div style="background:#0F1D2E;padding:34px 30px;">
+            <div style="font-family:'Newsreader',serif;font-size:20px;color:#C99B49;font-weight:600;margin-bottom:16px;">{{ p.n }}</div>
+            <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:23px;margin:0 0 12px;color:#FBF7EE;">{{ p.title }}</h3>
+            <p style="font-size:16px;line-height:1.6;color:#AEBAC7;margin:0;">{{ p.body }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <div style="background:#0F1D2E;border:1px solid rgba(201,155,73,.25);border-radius:12px;padding:34px 40px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;">
+        <div style="max-width:720px;">
+          <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:10px;">How Grace is paid</div>
+          <div style="font-family:'Newsreader',serif;font-size:26px;font-weight:600;color:#FBF7EE;margin-bottom:8px;">Salary, not commission.</div>
+          <p style="font-size:17px;line-height:1.55;color:#C3CCD6;margin:0;">A Grace expert’s paycheck does not move based on what you decide — whether you buy gold or silver, how much, or whether you buy at all. A structural commitment, not a marketing line.</p>
+        </div>
+        <a href="Grace Precious Metals Pricing.dc.html" style="background:#B0863C;color:#fff;font-weight:600;font-size:16px;padding:14px 24px;border-radius:3px;white-space:nowrap;" style-hover="background:#C99B49;">See our pricing →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:#0F1D2E;color:#EDE5D4;border-top:1px solid rgba(201,155,73,.2);">
+    <div style="max-width:900px;margin:0 auto;padding:74px 28px;text-align:center;">
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:36px;line-height:1.15;margin:0 0 28px;color:#FBF7EE;">We'd rather you decide with clear eyes. See our price in full, or talk it through with a salaried expert who earns the same whether you buy or not.</h2>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;">
+        <a href="Grace Precious Metals Pricing.dc.html" style="background:#B0863C;color:#fff;font-weight:600;font-size:18px;padding:16px 28px;border-radius:3px;" style-hover="background:#C99B49;">See our pricing</a>
+        <a href="tel:+18005550199" style="border:1.5px solid rgba(244,238,226,.55);color:#F4EEE2;font-weight:600;font-size:18px;padding:15px 28px;border-radius:3px;" style-hover="border-color:#F4EEE2;background:rgba(244,238,226,.08);">Talk to an expert →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0B1520;color:#9FAEBC;margin-top:54px;">
+    <div style="max-width:1180px;margin:0 auto;padding:64px 28px 40px;">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;">
+            <svg viewBox="0 0 80 90" width="36" height="40" style="display:block;flex-shrink:0;" aria-hidden="true">
+              <defs><linearGradient id="ftGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D2A24E"></stop><stop offset="1" stop-color="#A47B34"></stop></linearGradient></defs>
+              <g fill="url(#ftGold)"><circle cx="40" cy="8" r="5"></circle><rect x="37.5" y="12" width="5" height="60" rx="1"></rect><rect x="8" y="20.5" width="64" height="5" rx="2.5"></rect><rect x="25" y="71" width="30" height="5" rx="1.5"></rect><rect x="18" y="78" width="44" height="7" rx="2.5"></rect></g>
+              <g stroke="url(#ftGold)" stroke-width="2" fill="none" stroke-linecap="round"><path d="M10 24 L2 47 M10 24 L18 47"></path><path d="M70 24 L62 47 M70 24 L78 47"></path></g>
+              <g fill="url(#ftGold)"><path d="M0 47 Q10 65 20 47 Z"></path><path d="M60 47 Q70 65 80 47 Z"></path></g>
+            </svg>
+            <span style="display:flex;flex-direction:column;line-height:1;">
+              <span style="font-family:'Newsreader',serif;font-size:24px;font-weight:600;color:#F4EEE2;">Grace</span>
+              <span style="font-size:9px;font-weight:700;letter-spacing:.24em;color:#C99B49;text-transform:uppercase;margin-top:4px;">Precious Metals</span>
+            </span>
+          </div>
+          <p style="font-size:15px;line-height:1.6;margin:0 0 18px;max-width:300px;">The Gold IRA with a published price. 11.1% all-in, buyback at wholesale, salaried experts.</p>
+          <a href="tel:+18005550199" style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#F4EEE2;" style-hover="color:#D2A24E;">(800) 555-0199</a>
+          <p style="font-size:14px;margin:8px 0 0;">Mon–Fri, 8am–4pm PST · 5150 E. Pacific Coast Hwy, Suite 200, Long Beach, California 90804</p>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Pages</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Pricing.dc.html" style-hover="color:#F4EEE2;">Our pricing</a>
+            <a href="Grace Precious Metals Rollover.dc.html" style-hover="color:#F4EEE2;">How a rollover works</a>
+            <a href="#top" style-hover="color:#F4EEE2;">Why invest</a>
+            <a href="Grace Precious Metals Who We Are.dc.html" style-hover="color:#F4EEE2;">Who we are</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Resources</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Resources.dc.html" style-hover="color:#F4EEE2;">Resources library</a>
+            <a href="Grace Precious Metals Buyback.dc.html" style-hover="color:#F4EEE2;">Buyback policy</a>
+            <a href="Grace Precious Metals Numismatic.dc.html" style-hover="color:#F4EEE2;">Numismatic coins</a>
+            <a href="Grace Precious Metals FAQ.dc.html" style-hover="color:#F4EEE2;">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C99B49;font-weight:700;margin-bottom:16px;">Talk to us</div>
+          <div style="display:grid;gap:11px;font-size:15px;">
+            <a href="Grace Precious Metals Briefing.dc.html" style-hover="color:#F4EEE2;">Get the briefing</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style-hover="color:#F4EEE2;">Talk to an expert</a>
+            <a href="Grace Precious Metals Advisor.dc.html" style-hover="color:#F4EEE2;">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding-top:28px;">
+        <p style="font-size:12.5px;line-height:1.6;color:#6B7785;margin:0 0 20px;">Grace Precious Metals is a precious metals dealer. It does not provide investment, legal, or tax advice, and nothing on this site is a recommendation to buy or sell any asset. Gold IRAs require an IRS-approved custodian and depository. Precious metals carry risk, including possible loss of principal, and prices can go down as well as up. Past performance does not guarantee future results. Consult your own qualified financial, legal, and tax advisors before making any decision. Grace’s published price is 11.1% all-in, with buyback at wholesale and no ongoing accrued fee. Cost comparisons reflect a category-typical round-trip range of 17%–33%, drawn from published research; no specific company is named. References to regulatory action describe allegations and settlements in matters brought against other companies; they are not findings against any company named here.</p>
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;">
+          <div style="display:flex;gap:18px;flex-wrap:wrap;">
+            <a href="Grace Precious Metals Privacy Policy.dc.html" style-hover="color:#F4EEE2;">Privacy</a>
+            <a href="Grace Precious Metals Terms.dc.html" style-hover="color:#F4EEE2;">Terms</a>
+            <a href="#" style-hover="color:#F4EEE2;">Disclosures</a>
+          </div>
+          <span>© 2026 Grace Precious Metals. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { openMenu: null };
+  renderVals() {
+    return {
+      pricingOpen: this.state.openMenu === 'pricing',
+      goldIraOpen: this.state.openMenu === 'goldira',
+      whoWeAreOpen: this.state.openMenu === 'whoweare',
+      pricingCaret: this.state.openMenu === 'pricing' ? 'rotate(180deg)' : 'rotate(0deg)',
+      goldIraCaret: this.state.openMenu === 'goldira' ? 'rotate(180deg)' : 'rotate(0deg)',
+      whoWeAreCaret: this.state.openMenu === 'whoweare' ? 'rotate(180deg)' : 'rotate(0deg)',
+      openPricing: () => this.setState({ openMenu: 'pricing' }),
+      openGoldIra: () => this.setState({ openMenu: 'goldira' }),
+      openWhoWeAre: () => this.setState({ openMenu: 'whoweare' }),
+      closeMenu: () => this.setState({ openMenu: null }),
+      properties: [
+        { n: '01', title: 'Holds its value', body: 'Over the last hundred years, an ounce of gold has roughly kept pace with rising prices. That’s the floor of the case for owning it.' },
+        { n: '02', title: 'Nothing behind it to fail', body: 'A bond can default. A bank can fail. A stock can go to zero. Gold isn’t a promise from any company — so there’s nothing to go bankrupt.' },
+        { n: '03', title: 'Easy to sell', body: 'Standard bullion has a published price. You can sell it to a dealer, anywhere, on any business day.' },
+        { n: '04', title: 'Every coin is the same', body: 'One standard bullion coin is identical to every other. There’s no “grade” to argue over and no story about why yours is special — so there’s nothing to mark up.' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
